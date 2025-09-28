@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+Secrets managed via Rails credentials and local .env (ignored).
