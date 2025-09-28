@@ -1,17 +1,20 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
   <div class="container">
-    <!--How it works(left)-->
+    <!--How it works-->
     <%= link_to "#how-it-works", class: "nav-link me-auto text-dark" do %>
       How it works
     <% end %>
 
-    <!--Geobites(center)-->
+    <!--Geobites-->
     <%= link_to root_path, class: "navbar-brand mx-auto text-decoration-none text-dark " do %>
       <div class="d-flex align-items-center">
-
+        <div class="me-2">
+          <%= image_tag "logo.svg", alt: "Logo", class: "navbar-logo" %>
+        </div>
+        <div class="navbar-brand-text">GeoBites</div>
       </div>
     <% end %>
-    <!--Bookmarks(right)-->
+    <!--Bookmarks-->
     <ul class="navbar-nav me-auto">
       <% if user_signed_in? %>
       <li class="nav-item active">
