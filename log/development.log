@@ -37,3 +37,342 @@ Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at
   
 ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
   
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-09-29 08:46:34 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 540)
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3730)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 919)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 9466)
+Completed 200 OK in 23ms (Views: 13.7ms | ActiveRecord: 2.5ms | Allocations: 18550)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 08:46:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-09-29 08:46:41 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 111)
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 862)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 546)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 5897)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 6463)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 08:46:41 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-09-29 08:47:55 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 519)
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1763)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 1240)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 7820)
+Completed 200 OK in 13ms (Views: 8.6ms | ActiveRecord: 1.1ms | Allocations: 13303)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 08:47:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-09-29 08:48:21 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 519)
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1765)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 993)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 7575)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 1.2ms | Allocations: 13057)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 08:48:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-09-29 08:48:32 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 519)
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1763)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 992)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 7572)
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 1.7ms | Allocations: 13036)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 08:48:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 08:48:42 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-09-29 08:49:35 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 519)
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1767)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 986)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 7570)
+Completed 200 OK in 14ms (Views: 8.4ms | ActiveRecord: 1.8ms | Allocations: 13057)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 08:49:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-09-29 08:58:05 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 12.9ms | Allocations: 520)
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 17.5ms | Allocations: 1764)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 986)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 7571)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 12362)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 08:58:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-09-29 08:58:10 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 90)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 637)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5485)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 6122)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 08:58:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-09-29 09:12:09 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 181)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1300)
+  Rendered layout layouts/application.html.erb (Duration: 53.6ms | Allocations: 33682)
+Completed 200 OK in 86ms (Views: 59.4ms | ActiveRecord: 0.0ms | Allocations: 37900)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 09:12:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/bookmarks" for 127.0.0.1 at 2025-09-29 09:12:11 +0200
+  
+ActionController::RoutingError (uninitialized constant BookmarksController):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 09:12:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-09-29 09:16:32 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1050)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 6265)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 7172)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 09:16:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-09-29 09:16:39 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 3.1ms | Allocations: 613)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 5408)
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 5641)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 09:16:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-09-29 09:23:20 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 91)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 1056)
+  Rendered layout layouts/application.html.erb (Duration: 2043.2ms | Allocations: 38921)
+Completed 200 OK in 2045ms (Views: 2044.3ms | ActiveRecord: 0.0ms | Allocations: 39826)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 09:23:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-09-29 09:48:06 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 613)
+  Rendered layout layouts/application.html.erb (Duration: 2045.7ms | Allocations: 37475)
+Completed 200 OK in 2052ms (Views: 2048.4ms | ActiveRecord: 0.0ms | Allocations: 37706)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 09:48:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-09-29 10:01:59 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 181)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1282)
+  Rendered layout layouts/application.html.erb (Duration: 2109.3ms | Allocations: 77256)
+Completed 200 OK in 2118ms (Views: 2111.6ms | ActiveRecord: 0.0ms | Allocations: 81472)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 10:02:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-09-29 10:02:05 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 611)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 5395)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 5631)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 10:02:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-09-29 10:02:06 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 611)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 5455)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 5685)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 10:02:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-09-29 10:13:18 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 91)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1053)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 6383)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 7289)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 10:13:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-09-29 17:05:21 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 91)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1051)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 6312)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.0ms | Allocations: 7216)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 17:05:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-09-29 17:06:25 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 91)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1055)
+  Rendered layout layouts/application.html.erb (Duration: 2121.6ms | Allocations: 40344)
+Completed 200 OK in 2123ms (Views: 2122.6ms | ActiveRecord: 0.0ms | Allocations: 41249)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-09-29 17:06:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-09-29 17:07:17 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 612)
+  Rendered layout layouts/application.html.erb (Duration: 2073.3ms | Allocations: 39458)
+Completed 200 OK in 2074ms (Views: 2073.7ms | ActiveRecord: 0.0ms | Allocations: 39689)
+
+
+Started GET "/" for 127.0.0.1 at 2025-09-29 17:08:50 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 614)
+  Rendered layout layouts/application.html.erb (Duration: 2140.6ms | Allocations: 39368)
+Completed 200 OK in 2150ms (Views: 2146.2ms | ActiveRecord: 0.0ms | Allocations: 39599)
+
+
+Started GET "/" for 127.0.0.1 at 2025-09-29 17:08:56 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 605)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 5355)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 5586)
+
+
+Started GET "/bookmarks" for 127.0.0.1 at 2025-09-29 17:08:57 +0200
+  
+ActionController::RoutingError (uninitialized constant BookmarksController):
+  
+Started GET "/" for 127.0.0.1 at 2025-09-29 17:09:36 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 612)
+  Rendered layout layouts/application.html.erb (Duration: 2047.4ms | Allocations: 39462)
+Completed 200 OK in 2052ms (Views: 2049.0ms | ActiveRecord: 0.0ms | Allocations: 39693)
+
+
