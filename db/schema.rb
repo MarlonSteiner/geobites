@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_09_27_085118) do
+ActiveRecord::Schema[7.1].define(version: 2025_09_30_072320) do
   create_table "bookmarks", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "output_id", null: false
@@ -29,6 +29,8 @@ ActiveRecord::Schema[7.1].define(version: 2025_09_27_085118) do
     t.string "source"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "latitude"
+    t.float "longitude"
   end
 
   create_table "users", force: :cascade do |t|
