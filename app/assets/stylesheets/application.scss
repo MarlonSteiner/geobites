@@ -1,3 +1,20 @@
+// Got it from bootstrap website
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: 2.5rem,
+  28: 1.5rem,
+  43: 2.69rem,
+  76: 4.75rem,
+  94: 5.88rem,
+  240: 15rem
+);
+
 // Graphical variables
 @import "config/fonts";
 @import "config/colors";
@@ -9,6 +26,7 @@
 
 // imports
 @import "navbar";
+@import "components/main";
 
 // Your CSS partials
 .navbar-logo {

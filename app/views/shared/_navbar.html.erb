@@ -1,25 +1,24 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
-  <div class="container">
-    <!--How it works-->
-    <%= link_to "#how-it-works", class: "nav-link me-auto text-dark navbar-link" do %>
-      How it works
-    <% end %>
+  <div class="container position-relative">
+      <!--How it works-->
+      <%= link_to "#how-it-works", class: "nav-link text-dark navbar-link" do %>
+        How it works
+      <% end %>
 
     <!--Geobites-->
-    <%= link_to root_path, class: "navbar-brand mx-auto text-decoration-none text-dark " do %>
-      <div class="d-flex align-items-center">
-        <div class="me-2">
-          <%= image_tag "logo.svg", alt: "Logo", class: "navbar-logo" %>
+      <%= link_to root_path, class: "navbar-brand mx-auto text-decoration-none text-dark " do %>
+        <div class="d-flex align-items-center">
+          <div class="me-2">
+            <%= image_tag "logo.svg", alt: "Logo", class: "navbar-logo" %>
+          </div>
+          <div class="navbar-brand-text navbar-geobites">GeoBites</div>
         </div>
-        <div class="navbar-brand-text navbar-geobites">GeoBites</div>
-      </div>
-    <% end %>
-
+      <% end %>
     <!--Bookmarks-->
-    <%= link_to  bookmarks_path, class: "nav-link me-auto text-dark navbar-link" do %>
-          Bookmarks
-      </div>
-    <% end %>
+      <%= link_to  bookmarks_path, class: "nav-link text-dark navbar-link" do %>
+            Bookmarks
+        </div>
+      <% end %>
 
     <!--User Login-->
     <ul class="navbar-nav me-auto">
@@ -35,7 +34,7 @@
       </li>
       <% else %>
         <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item"%>
+          <%= link_to image_tag("user-icon.svg", id: "user-icon", alt: "login"), new_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item"%>
         </li>
       <% end %>
     </ul>
