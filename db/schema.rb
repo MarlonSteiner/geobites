@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2025_09_30_072320) do
+ActiveRecord::Schema[7.1].define(version: 2025_10_02_114736) do
   create_table "bookmarks", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "output_id", null: false
@@ -23,8 +23,6 @@ ActiveRecord::Schema[7.1].define(version: 2025_09_30_072320) do
   create_table "outputs", force: :cascade do |t|
     t.string "city"
     t.string "country"
-    t.decimal "lat"
-    t.decimal "lng"
     t.text "text"
     t.string "source"
     t.datetime "created_at", null: false
