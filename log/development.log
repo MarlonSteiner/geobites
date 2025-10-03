@@ -2838,3 +2838,36 @@ Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at
   
 ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
   
+Started GET "/" for 127.0.0.1 at 2025-10-02 19:44:43 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1286)
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 1438)
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 2999)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 10939)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 11844)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-02 19:46:54 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1290)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1441)
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 3000)
+  Rendered layout layouts/application.html.erb (Duration: 2380.8ms | Allocations: 46623)
+Completed 200 OK in 2383ms (Views: 2381.8ms | ActiveRecord: 0.0ms | Allocations: 47530)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-02 19:47:44 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1288)
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 1440)
+  Rendered shared/_footer.html.erb (Duration: 1.9ms | Allocations: 2999)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 10978)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 11886)
+
+
