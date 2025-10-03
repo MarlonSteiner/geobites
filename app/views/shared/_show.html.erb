@@ -1,9 +1,8 @@
-<!--The code structure was taken from Mapbox Docs and then refined. Don't think there was anyway I could have done this from scratch-->
+<!--The code structure was taken from Mapbox Docs AI and then I worked from there. Don't think there was anyway I could have done this from scratch-->
 <div class="d-flex justify-content-center mb-12">
   <div id="map"></div>
 </div>
 
-<!-- Javascript is taken from docs and not something I could just come up with by myself -->
 <script>
   mapboxgl.accessToken = "<%= ENV["MAPBOX_TOKEN"] %>";
 
@@ -26,8 +25,7 @@
     const country = data.features[0]?.context?.find(c => c.id.includes('country'))?.text || 'Unknown';
 
     // Display it
-    document.getElementById('location-title').textContent = `${city}, ${country}`;
-    document.getElementById('output-text').textContent = 'Fact will go here';
-    document.getElementById('output-card').style.display = 'block';
+    document.getElementById('city').textContent = city;
+    document.getElementById('country').textContent = country;
   });
 </script>
