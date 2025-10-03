@@ -1,0 +1,33 @@
+<!--The code structure was taken from Mapbox Docs and then refined. Don't think there was anyway I could have done this from scratch-->
+<div class="d-flex justify-content-center mb-12">
+  <div id="map"></div>
+</div>
+
+<!-- Javascript is taken from docs and not something I could just come up with by myself -->
+<script>
+  mapboxgl.accessToken = "<%= ENV["MAPBOX_TOKEN"] %>";
+
+  const map = new mapboxgl.Map({
+    container: "map",
+    style: "mapbox://styles/mapbox/standard-satellite",
+    projection: "globe",
+    zoom: 1.5,
+    center: [0, 20]
+  });
+
+  map.on('click', async (e) => {
+    const { lat, lng } = e.lngLat;
+
+    // Call Mapbox reverse geocoding
+    const response = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${lng},${lat}.json?access_token=${mapboxgl.accessToken}&types=place,country`);
+    const data = await response.json();
+
+    const city = data.features[0]?.text || 'Unknown';
+    const country = data.features[0]?.context?.find(c => c.id.includes('country'))?.text || 'Unknown';
+
+    // Display it
+    document.getElementById('location-title').textContent = `${city}, ${country}`;
+    document.getElementById('output-text').textContent = 'Fact will go here';
+    document.getElementById('output-card').style.display = 'block';
+  });
+</script>

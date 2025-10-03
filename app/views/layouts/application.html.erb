@@ -10,16 +10,17 @@
 
     <!-- Mapbox -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+    <!-- Mapbox JS because importmap isn't working -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
   </head>
-
   <body>
     <!-- ensure devise flash messages-->
+    <!--
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    -->
     <%= render "shared/navbar" %>
     <%= yield %>
     <%= render "shared/footer" %>
-    <!-- Mapbox JS because importmap isn't working -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
   </body>
 </html>

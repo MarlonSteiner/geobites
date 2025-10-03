@@ -4,13 +4,13 @@
 }
 
 #travel-section {
-  height: 19.4rem;
-  width: auto;
+  height: auto;
+  width: 68.61%;
 }
 
 #how-section {
-  height: 15rem;
-  width: auto;
+  height: auto;
+  width: 82.15%;
 }
 // Footer section
 #footer-geobites {
@@ -32,5 +32,26 @@
 }
 
 .output-background {
+  width: 62.78%;
+  height: 18.13rem;
   background-color: #F2F2F2;
+  border-radius: 4rem;
+}
+
+.url-icon {
+  height: 20px;
+  width: auto;
+}
+
+#map {
+  width: 62.78%;
+  height: 30rem;
+  min-height: 300px;
+  border-radius: 4rem;
+}
+
+.navheight {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 127px;
 }

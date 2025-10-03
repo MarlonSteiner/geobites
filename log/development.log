@@ -2871,3 +2871,751 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 11886)
 
 
+Started GET "/" for 127.0.0.1 at 2025-10-03 11:03:44 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1289)
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 1438)
+  Rendered shared/_footer.html.erb (Duration: 3.0ms | Allocations: 2999)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 10938)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 11846)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 11:05:42 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1292)
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 1438)
+  Rendered shared/_footer.html.erb (Duration: 6.3ms | Allocations: 3003)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 10927)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 11835)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 11:14:59 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1721)
+  Rendered shared/_navbar.html.erb (Duration: 3.5ms | Allocations: 1431)
+  Rendered shared/_footer.html.erb (Duration: 7.1ms | Allocations: 2793)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 11053)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms | Allocations: 11960)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 11:15:26 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1721)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1430)
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 2977)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 11239)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 12147)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 11:16:39 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1723)
+  Rendered shared/_navbar.html.erb (Duration: 1.8ms | Allocations: 1441)
+  Rendered shared/_footer.html.erb (Duration: 2.4ms | Allocations: 2999)
+  Rendered layout layouts/application.html.erb (Duration: 2412.8ms | Allocations: 48043)
+Completed 200 OK in 2414ms (Views: 2413.8ms | ActiveRecord: 0.0ms | Allocations: 48950)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 11:18:08 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 8.3ms | Allocations: 2940)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 3028)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 3925)
+
+
+  
+ActionView::Template::Error (The asset "bookmark-icon-untoggled-icon.svg" is not present in the asset pipeline.
+):
+    14:       <div><a href="https://github.com/MarlonSteiner" ><%=image_tag "url-icon.svg", class:"url-icon", alt:"learn more icon" %></a>Learn more</div>
+    15:   </div>
+    16:     <div class="col">
+    17:       <div><a href="https://github.com/MarlonSteiner" ><%=image_tag "bookmark-icon-untoggled-icon.svg", class:"url-icon", alt:"learn more icon" %></a>Learn more</div>
+    18:   </div>
+    19:   </div>
+    20: 
+  
+app/views/home/index.html.erb:17
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-10-03 11:18:36 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 84.1ms | Allocations: 46360)
+  Rendered layout layouts/application.html.erb (Duration: 84.2ms | Allocations: 46482)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 0.0ms | Allocations: 50663)
+
+
+  
+ActionView::Template::Error (The asset "bookmark-icon-untoggled-icon.svg" is not present in the asset pipeline.
+):
+    14:       <div><a href="https://github.com/MarlonSteiner" ><%=image_tag "url-icon.svg", class:"url-icon", alt:"learn more icon" %></a>Learn more</div>
+    15:   </div>
+    16:     <div class="col">
+    17:       <div><a href="https://github.com/MarlonSteiner" ><%=image_tag "bookmark-icon-untoggled-icon.svg", class:"url-icon", alt:"learn more icon" %></a>Learn more</div>
+    18:   </div>
+    19:   </div>
+    20: 
+  
+app/views/home/index.html.erb:17
+Started GET "/" for 127.0.0.1 at 2025-10-03 11:19:05 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2158)
+  Rendered shared/_navbar.html.erb (Duration: 3.8ms | Allocations: 1647)
+  Rendered shared/_footer.html.erb (Duration: 2.2ms | Allocations: 3021)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 12158)
+Completed 200 OK in 25ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 13107)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 11:19:19 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2143)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1426)
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 2962)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 11654)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 12564)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 11:20:58 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1788)
+  Rendered shared/_navbar.html.erb (Duration: 1.9ms | Allocations: 990)
+  Rendered shared/_footer.html.erb (Duration: 2.8ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 10178)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms | Allocations: 10409)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 11:22:12 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2164)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1441)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 2999)
+  Rendered layout layouts/application.html.erb (Duration: 2459.4ms | Allocations: 46920)
+Completed 200 OK in 2468ms (Views: 2467.0ms | ActiveRecord: 0.0ms | Allocations: 47824)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 12:11:38 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2163)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1439)
+  Rendered shared/_footer.html.erb (Duration: 2.2ms | Allocations: 2998)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 11824)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 12732)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 12:15:58 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2135)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1426)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 2962)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 11647)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 12552)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 12:23:10 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 187)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2493)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1437)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 2999)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 12157)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 13065)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 12:30:49 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1860)
+  Rendered shared/_navbar.html.erb (Duration: 2.5ms | Allocations: 989)
+  Rendered shared/_footer.html.erb (Duration: 3.0ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 10230)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 10465)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 12:31:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-10-03 12:44:22 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 201)
+  Rendered home/index.html.erb within layouts/application (Duration: 63.3ms | Allocations: 45642)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1651)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 72.9ms | Allocations: 56690)
+Completed 200 OK in 82ms (Views: 75.2ms | ActiveRecord: 0.0ms | Allocations: 60732)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 12:44:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 12:44:24 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1860)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1001)
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 10338)
+Completed 200 OK in 8ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 10576)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 12:44:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 12:47:16 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1889)
+  Rendered shared/_navbar.html.erb (Duration: 1.8ms | Allocations: 1001)
+  Rendered shared/_footer.html.erb (Duration: 3.0ms | Allocations: 2730)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 10412)
+Completed 200 OK in 16ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 10642)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 12:47:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+[dotenv] Set [36mOPENAI_API_KEY[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 127.0.0.1 at 2025-10-03 12:50:32 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 201)
+  Rendered home/index.html.erb within layouts/application (Duration: 23.3ms | Allocations: 33095)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1688)
+  Rendered shared/_footer.html.erb (Duration: 8.9ms | Allocations: 3121)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 44300)
+Completed 200 OK in 50ms (Views: 42.7ms | ActiveRecord: 0.0ms | Allocations: 48520)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 12:50:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 12:56:07 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.5ms | Allocations: 186)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2497)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1438)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 12160)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 13072)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 12:56:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 12:58:58 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 187)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2498)
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 1439)
+  Rendered shared/_footer.html.erb (Duration: 3.6ms | Allocations: 3008)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 12163)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 13072)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:00:10 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 186)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2497)
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 1438)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 12164)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 13075)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:01:49 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 185)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2494)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1439)
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 3005)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 12146)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 13057)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:02:13 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 185)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2494)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1438)
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 3006)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 12159)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 13072)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:04:47 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 187)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2498)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1439)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 3006)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 12165)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 13076)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:09:19 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 179)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2493)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1443)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 3005)
+  Rendered layout layouts/application.html.erb (Duration: 2437.6ms | Allocations: 52040)
+Completed 200 OK in 2439ms (Views: 2438.5ms | ActiveRecord: 0.0ms | Allocations: 52951)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:11:21 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2491)
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 1444)
+  Rendered shared/_footer.html.erb (Duration: 3.9ms | Allocations: 3006)
+  Rendered layout layouts/application.html.erb (Duration: 2499.0ms | Allocations: 47550)
+Completed 200 OK in 2501ms (Views: 2500.0ms | ActiveRecord: 0.0ms | Allocations: 48460)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:15:56 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1872)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 1004)
+  Rendered shared/_footer.html.erb (Duration: 2.3ms | Allocations: 2737)
+  Rendered layout layouts/application.html.erb (Duration: 2471.3ms | Allocations: 47011)
+Completed 200 OK in 2474ms (Views: 2472.1ms | ActiveRecord: 0.0ms | Allocations: 47243)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:17:13 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1872)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 1004)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 2737)
+  Rendered layout layouts/application.html.erb (Duration: 2497.3ms | Allocations: 48005)
+Completed 200 OK in 2500ms (Views: 2499.6ms | ActiveRecord: 0.0ms | Allocations: 48236)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:18:02 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 3.1ms | Allocations: 179)
+  Rendered home/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2473)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1438)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 12036)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 12944)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:22:26 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.4ms | Allocations: 179)
+  Rendered home/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2493)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1440)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 3005)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 12152)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 13063)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:22:41 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 179)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2492)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1439)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 3005)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 12158)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 13069)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 13:23:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:28:43 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 1892)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 1004)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 2543.3ms | Allocations: 49115)
+Completed 200 OK in 2545ms (Views: 2544.1ms | ActiveRecord: 0.0ms | Allocations: 49346)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 13:28:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:30:37 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 1890)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1004)
+  Rendered shared/_footer.html.erb (Duration: 1.9ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 2664.4ms | Allocations: 49016)
+Completed 200 OK in 2665ms (Views: 2664.9ms | ActiveRecord: 0.0ms | Allocations: 49247)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 13:30:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:32:59 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2489)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1439)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 12152)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 13062)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 13:32:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 13:34:05 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1892)
+  Rendered shared/_navbar.html.erb (Duration: 2.4ms | Allocations: 1003)
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 10435)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 10665)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 13:34:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 13:58:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 14:04:30 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 178)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2487)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1445)
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 3005)
+  Rendered layout layouts/application.html.erb (Duration: 2649.4ms | Allocations: 50910)
+Completed 200 OK in 2652ms (Views: 2650.7ms | ActiveRecord: 0.0ms | Allocations: 51816)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 14:04:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 14:28:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:13:53 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.5ms | Allocations: 180)
+  Rendered home/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 2465)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1445)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 3005)
+  Rendered layout layouts/application.html.erb (Duration: 2600.0ms | Allocations: 50907)
+Completed 200 OK in 2602ms (Views: 2601.2ms | ActiveRecord: 0.0ms | Allocations: 51813)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:13:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:14:44 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1892)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 1004)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 2581.5ms | Allocations: 49127)
+Completed 200 OK in 2583ms (Views: 2582.1ms | ActiveRecord: 0.0ms | Allocations: 49358)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:14:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:16:39 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1890)
+  Rendered shared/_navbar.html.erb (Duration: 2.0ms | Allocations: 1003)
+  Rendered shared/_footer.html.erb (Duration: 15.0ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 10380)
+Completed 200 OK in 28ms (Views: 27.4ms | ActiveRecord: 0.0ms | Allocations: 10612)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:16:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:17:29 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1892)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 1004)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 2742.7ms | Allocations: 45890)
+Completed 200 OK in 2744ms (Views: 2743.2ms | ActiveRecord: 0.0ms | Allocations: 46121)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:17:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:19:43 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1889)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 1004)
+  Rendered shared/_footer.html.erb (Duration: 2.7ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 2635.3ms | Allocations: 47136)
+Completed 200 OK in 2636ms (Views: 2635.8ms | ActiveRecord: 0.0ms | Allocations: 47367)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:19:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:19:54 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1889)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1003)
+  Rendered shared/_footer.html.erb (Duration: 2.4ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 10487)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 10717)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:19:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:24:00 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2355)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1438)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 12018)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 12925)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:24:03 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1857)
+  Rendered shared/_navbar.html.erb (Duration: 4.9ms | Allocations: 989)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 2739)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 10277)
+Completed 200 OK in 12ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 10508)
+
+
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:24:19 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2341)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1431)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 2999)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 11879)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 12787)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:24:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:25:35 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 80)
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2361)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1439)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 12013)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 12922)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:25:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:25:52 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.4ms | Allocations: 178)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2459)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1438)
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 12107)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 13016)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:25:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:27:59 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 178)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2461)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1439)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 12122)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 13031)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:27:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:30:38 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 179)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 2361)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1438)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 12015)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 12925)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:30:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:31:40 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2380)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1444)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 12034)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 12941)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:31:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for 127.0.0.1 at 2025-10-03 15:32:49 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 4.1ms | Allocations: 203)
+  Rendered home/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2383)
+  Rendered shared/_navbar.html.erb (Duration: 2.2ms | Allocations: 1438)
+  Rendered shared/_footer.html.erb (Duration: 1.9ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 12032)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 12939)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for 127.0.0.1 at 2025-10-03 15:32:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  

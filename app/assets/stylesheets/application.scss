@@ -8,8 +8,10 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   6: 2.5rem,
+  12: 0.75rem,
   28: 1.5rem,
   43: 2.69rem,
+  75: 4.69rem,
   76: 4.75rem,
   94: 5.88rem,
   240: 15rem
@@ -29,14 +31,6 @@ $spacers: (
 @import "components/main";
 
 // Your CSS partials
-.navbar-logo {
-  width: 130px;
-  height: auto;
-}
-
-.navbar-brand-text {
-  font-weight: 600;
-}
 
 body {
   // font-family: inter;
