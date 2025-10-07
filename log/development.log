@@ -4075,3 +4075,47 @@ ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific
   
 [dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
 [dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-06 12:56:36 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 200)
+  Rendered shared/_output.html.erb (Duration: 0.2ms | Allocations: 110)
+  Rendered home/index.html.erb within layouts/application (Duration: 75.1ms | Allocations: 33210)
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 1688)
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 3112)
+  Rendered layout layouts/application.html.erb (Duration: 89.0ms | Allocations: 44466)
+Completed 200 OK in 103ms (Views: 92.2ms | ActiveRecord: 0.0ms | Allocations: 48684)
+
+
+Started GET "/users/sign_in" for ::1 at 2025-10-06 15:48:52 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 541)
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 11.1ms | Allocations: 3061)
+  Rendered shared/_navbar.html.erb (Duration: 2.3ms | Allocations: 1416)
+  Rendered shared/_footer.html.erb (Duration: 6.2ms | Allocations: 3005)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 12673)
+Completed 200 OK in 46ms (Views: 28.3ms | ActiveRecord: 10.9ms | Allocations: 21359)
+
+
+Started GET "/users/sign_in" for ::1 at 2025-10-06 15:48:53 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 111)
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 862)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 994)
+  Rendered shared/_footer.html.erb (Duration: 2.3ms | Allocations: 2737)
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 9327)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms | Allocations: 9973)
+
+
+Started GET "/bookmarks" for ::1 at 2025-10-06 15:53:17 +0200
+  
+ActionController::RoutingError (uninitialized constant BookmarksController):
+  

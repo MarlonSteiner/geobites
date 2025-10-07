@@ -7,7 +7,7 @@ class OpenaiService
       parameters: {
         model: "gpt-3.5-turbo",
         messages: [
-          { role: "user", content: "Give me one interesting fact about #{city}, #{country} in 1-2 sentences, under 35 words." }
+          { role: "user", content: "Give me one interesting fact about #{city}, #{country} in 1-2 sentences, under 100 words." }
         ],
         max_tokens: 60
       }

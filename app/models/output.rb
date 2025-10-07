@@ -10,12 +10,12 @@ class Output < ApplicationRecord
   def address
     "#{city}, #{country}"
   end
-  # Output prompting template from LeWagon
+  # Output prompting template from LeWagon Docs
   def content
     client = OpenAI::Client.new
     chatgpt_response = client.chat(parameters: {
       model: "gpt-4o-mini",
-      messages: [{ role: "user", content: "Give me a simple recipe for #{name} with the ingredients #{ingredients}. Give me only the text of the recipe, without any of your own answer like 'Here is a simple recipe'."}]
+      messages: [{ role: "user", content: "You are GeoBites. Be concise, factual, and avoid unverified claims."}]
     })
     return chatgpt_response["choices"][0]["message"]["content"]
 end
