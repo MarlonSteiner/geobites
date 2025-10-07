@@ -5,9 +5,9 @@ class OpenaiService
 
     response = client.chat(
       parameters: {
-        model: "gpt-3.5-turbo",
+        model: "gpt-5-nano",
         messages: [
-          { role: "user", content: "Give me one interesting fact about #{city}, #{country} in 1-2 sentences, under 100 words." }
+          { role: "user", content: "Give me one interesting fact about #{city} #{country} in under 100 words." }
         ],
         max_tokens: 60
       }
