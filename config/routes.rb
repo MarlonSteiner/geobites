@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "home#index"
   get "bookmarks", to: "bookmarks#index"
+  post "/select", to: "home#select"
 
   # API endpoint for getting location data & fun facts
   get "api/outputs/show", to: "api/outputs#show"
