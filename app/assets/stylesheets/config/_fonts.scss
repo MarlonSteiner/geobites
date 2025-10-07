@@ -1,7 +1,7 @@
 // I got this code structure from my old project GRAMGRAM which is pinned on my Github.
-// Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+// Import Google fonts Inter
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+$body-font: "Inter", "Work Sans", "Helvetica", "sans-serif";
+$headers-font: "Inter", "Nunito", "Helvetica", "sans-serif";

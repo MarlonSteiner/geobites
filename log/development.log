@@ -4349,3 +4349,506 @@ Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-
   
 ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
   
+Started GET "/" for ::1 at 2025-10-07 13:37:29 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1948)
+  Rendered shared/_navbar.html.erb (Duration: 2.3ms | Allocations: 1003)
+  Rendered shared/_footer.html.erb (Duration: 3.5ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 10572)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 10807)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 13:37:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-07 13:38:06 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1955)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1004)
+  Rendered shared/_footer.html.erb (Duration: 1.2ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 2517.7ms | Allocations: 49222)
+Completed 200 OK in 2520ms (Views: 2519.1ms | ActiveRecord: 0.0ms | Allocations: 49456)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 13:38:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-07 13:38:20 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1950)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1004)
+  Rendered shared/_footer.html.erb (Duration: 3.2ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 10481)
+Completed 200 OK in 16ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 10716)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 13:38:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-07 13:38:28 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 1955)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 1004)
+  Rendered shared/_footer.html.erb (Duration: 1.1ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 2513.1ms | Allocations: 49227)
+Completed 200 OK in 2514ms (Views: 2513.5ms | ActiveRecord: 0.0ms | Allocations: 49461)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 13:38:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-07 13:38:57 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1950)
+  Rendered shared/_navbar.html.erb (Duration: 1.6ms | Allocations: 1006)
+  Rendered shared/_footer.html.erb (Duration: 3.1ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 10498)
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.0ms | Allocations: 10733)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 13:38:57 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-07 13:39:14 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1955)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 1004)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 2581.0ms | Allocations: 49226)
+Completed 200 OK in 2582ms (Views: 2581.5ms | ActiveRecord: 0.0ms | Allocations: 49460)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 13:39:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-07 13:39:39 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1950)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 1003)
+  Rendered shared/_footer.html.erb (Duration: 3.2ms | Allocations: 2741)
+  Rendered layout layouts/application.html.erb (Duration: 2501.4ms | Allocations: 49120)
+Completed 200 OK in 2502ms (Views: 2501.7ms | ActiveRecord: 0.0ms | Allocations: 49355)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 13:39:42 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-07 13:58:07 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 201)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 110)
+  Rendered home/index.html.erb within layouts/application (Duration: 2627.5ms | Allocations: 83044)
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 1651)
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 2638.4ms | Allocations: 94134)
+Completed 200 OK in 2649ms (Views: 2641.9ms | ActiveRecord: 0.0ms | Allocations: 98354)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 13:58:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-07 14:37:36 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1950)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 5022)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms | Allocations: 5286)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: config/colors.
+        on line 22:1 of app/assets/stylesheets/application.scss
+>> @import "config/colors";
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10: 
+    11:     <!-- Mapbox -->
+    12:     <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+  
+app/views/layouts/application.html.erb:9
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 14:37:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-07 14:37:40 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1931)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 4904)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 5141)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: config/colors.
+        on line 22:1 of app/assets/stylesheets/application.scss
+>> @import "config/colors";
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10: 
+    11:     <!-- Mapbox -->
+    12:     <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+  
+app/views/layouts/application.html.erb:9
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 14:37:40 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-07 16:21:07 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.5ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1931)
+  Rendered layout layouts/application.html.erb (Duration: 38.0ms | Allocations: 4958)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms | Allocations: 5193)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: config/colors.
+        on line 22:1 of app/assets/stylesheets/application.scss
+>> @import "config/colors";
+
+   ^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    10: 
+    11:     <!-- Mapbox -->
+    12:     <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+  
+app/views/layouts/application.html.erb:9
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 16:21:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-07 16:21:48 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 201)
+  Rendered shared/_output.html.erb (Duration: 0.5ms | Allocations: 110)
+  Rendered home/index.html.erb within layouts/application (Duration: 55.3ms | Allocations: 42245)
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 42362)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.0ms | Allocations: 46557)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: config/bootstrap_variables.
+        on line 22:1 of app/assets/stylesheets/application.scss
+>> @import "config/bootstrap_variables";
+
+   ^
+):
+  
+sassc (2.4.0) lib/sassc/engine.rb:50:in `render'
+sassc-rails (2.1.2) lib/sassc/rails/template.rb:40:in `block in call'
+sprockets (4.2.2) lib/sprockets/utils.rb:145:in `block in module_include'
+sprockets (4.2.2) lib/sprockets/utils.rb:130:in `synchronize'
+sprockets (4.2.2) lib/sprockets/utils.rb:130:in `module_include'
+sassc-rails (2.1.2) lib/sassc/rails/template.rb:39:in `call'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:22:in `block in <class:CompositeProcessor>'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:33:in `call'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.2) lib/sprockets/loader.rb:184:in `load_from_unloaded'
+sprockets (4.2.2) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.2) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.2) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.2) lib/sprockets/bundle.rb:27:in `call'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.2) lib/sprockets/loader.rb:184:in `load_from_unloaded'
+sprockets (4.2.2) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.2) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.2) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.2) lib/sprockets/bundle.rb:32:in `block in call'
+/Users/marlon/.rbenv/versions/3.3.5/lib/ruby/3.3.0/set.rb:501:in `each_key'
+/Users/marlon/.rbenv/versions/3.3.5/lib/ruby/3.3.0/set.rb:501:in `each'
+sprockets (4.2.2) lib/sprockets/bundle.rb:31:in `call'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.2) lib/sprockets/loader.rb:184:in `load_from_unloaded'
+sprockets (4.2.2) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.2) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.2) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.2) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.2.2) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.2.2) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.2) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.2) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in `run_task'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in `block (3 levels) in create_worker'
+<internal:kernel>:187:in `loop'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `block (2 levels) in create_worker'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `catch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `block in create_worker'
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 16:21:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-07 16:21:50 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 22.5ms | Allocations: 27223)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 27314)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 27554)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: config/bootstrap_variables.
+        on line 22:1 of app/assets/stylesheets/application.scss
+>> @import "config/bootstrap_variables";
+
+   ^
+):
+  
+sassc (2.4.0) lib/sassc/engine.rb:50:in `render'
+sassc-rails (2.1.2) lib/sassc/rails/template.rb:40:in `block in call'
+sprockets (4.2.2) lib/sprockets/utils.rb:145:in `block in module_include'
+sprockets (4.2.2) lib/sprockets/utils.rb:130:in `synchronize'
+sprockets (4.2.2) lib/sprockets/utils.rb:130:in `module_include'
+sassc-rails (2.1.2) lib/sassc/rails/template.rb:39:in `call'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:22:in `block in <class:CompositeProcessor>'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:33:in `call'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.2) lib/sprockets/loader.rb:184:in `load_from_unloaded'
+sprockets (4.2.2) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.2) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.2) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.2) lib/sprockets/bundle.rb:27:in `call'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.2) lib/sprockets/loader.rb:184:in `load_from_unloaded'
+sprockets (4.2.2) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.2) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.2) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.2) lib/sprockets/bundle.rb:32:in `block in call'
+/Users/marlon/.rbenv/versions/3.3.5/lib/ruby/3.3.0/set.rb:501:in `each_key'
+/Users/marlon/.rbenv/versions/3.3.5/lib/ruby/3.3.0/set.rb:501:in `each'
+sprockets (4.2.2) lib/sprockets/bundle.rb:31:in `call'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.2) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.2) lib/sprockets/loader.rb:184:in `load_from_unloaded'
+sprockets (4.2.2) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.2) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.2) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.2) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.2) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.2.2) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.2.2) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.2) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.2) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in `run_task'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in `block (3 levels) in create_worker'
+<internal:kernel>:187:in `loop'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `block (2 levels) in create_worker'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `catch'
+concurrent-ruby (1.3.5) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `block in create_worker'
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 16:21:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-07 16:22:13 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 201)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 110)
+  Rendered home/index.html.erb within layouts/application (Duration: 2522.5ms | Allocations: 81581)
+  Rendered shared/_navbar.html.erb (Duration: 1.4ms | Allocations: 1651)
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 2532.1ms | Allocations: 92584)
+Completed 200 OK in 2541ms (Views: 2534.8ms | ActiveRecord: 0.0ms | Allocations: 96804)
+
+
+Started GET "/" for ::1 at 2025-10-07 16:22:19 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1924)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 989)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 10265)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 10503)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 16:22:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-07 17:03:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-07 17:19:12 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 183)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 107)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 2607)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1440)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 2998)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 12256)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 13169)
+
+
+Started GET "/" for ::1 at 2025-10-07 17:35:46 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 1926)
+  Rendered shared/_navbar.html.erb (Duration: 0.9ms | Allocations: 1002)
+  Rendered shared/_footer.html.erb (Duration: 1.1ms | Allocations: 2730)
+  Rendered layout layouts/application.html.erb (Duration: 2526.2ms | Allocations: 45513)
+Completed 200 OK in 2527ms (Views: 2526.6ms | ActiveRecord: 0.0ms | Allocations: 45749)
+
+
+Started GET "/" for ::1 at 2025-10-07 17:36:44 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 7)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1930)
+  Rendered shared/_navbar.html.erb (Duration: 3.0ms | Allocations: 989)
+  Rendered shared/_footer.html.erb (Duration: 1.9ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 2519.4ms | Allocations: 45364)
+Completed 200 OK in 2520ms (Views: 2519.8ms | ActiveRecord: 0.0ms | Allocations: 45597)
+
+

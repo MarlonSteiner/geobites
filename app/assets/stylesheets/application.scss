@@ -1,4 +1,5 @@
-// Got it from bootstrap website
+// Got it from the bootstrap website https://getbootstrap.com/docs/5.0/utilities/spacing/
+// Also using spacers is easy and saves me time
 $spacer: 1rem;
 $spacers: (
   0: 0,
@@ -19,8 +20,6 @@ $spacers: (
 
 // Graphical variables
 @import "config/fonts";
-@import "config/colors";
-@import "config/bootstrap_variables";
 
 // External libraries
 @import "bootstrap";
@@ -31,7 +30,14 @@ $spacers: (
 @import "components/main";
 
 // Your CSS partials
-
+// I took this code structure from my old GramGram github project
 body {
-  // font-family: inter;
+  font-family: $body-font;
+  // https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing
+  letter-spacing: -3%;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $body-font;
 }
