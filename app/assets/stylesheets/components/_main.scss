@@ -34,6 +34,7 @@
 .output-background {
   width: 62.78%;
   height: 18.13rem;
+  // For a bigger project I would create a $background-color with scss
   background-color: #F2F2F2;
   border-radius: 4rem;
 }
@@ -49,10 +50,4 @@
   height: 30rem;
   min-height: 300px;
   border-radius: 4rem;
-}
-
-.navheight {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  height: 120px;
 }
