@@ -3,7 +3,10 @@ class HomeController < ApplicationController
   end
 
   def select
-    country = session[:country]
-    city = session[:city]
+    # Make the country and city variables
+    country = params[:country]
+    city = params[:city]
+    # Create output variable and use OpenAI service
+    output = OpenaiService.generate_fact(city, country)
   end
 end

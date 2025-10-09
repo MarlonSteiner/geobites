@@ -5161,3 +5161,16 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 18ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 10507)
 
 
+Started GET "/" for ::1 at 2025-10-09 00:09:59 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 183)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 107)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 2612)
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 1437)
+  Rendered shared/_footer.html.erb (Duration: 1.9ms | Allocations: 2998)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 12238)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 13149)
+
+
