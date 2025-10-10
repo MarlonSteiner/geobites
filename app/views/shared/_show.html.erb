@@ -20,13 +20,39 @@
 
     // Call Mapbox reverse geocoding
     const response = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${lng},${lat}.json?access_token=${mapboxgl.accessToken}&types=place,country`);
+    // Here I found why it wasn't working to fetch! I'm expecting json afterall...
     const data = await response.json();
 
     const city = data.features[0]?.text || 'Unknown';
     const country = data.features[0]?.context?.find(c => c.id.includes('country'))?.text || 'Unknown';
 
     // Display it
-    document.getElementById('city').textContent = city;
-    document.getElementById('country').textContent = country;
+    document.getElementById("city").textContent = city;
+    document.getElementById("country").textContent = country;
+
+    // fetch and send to select in home_controller
+    // I was stuck here the longest.
+    //https://developer.mozilla.org/en-US/docs/Web/API/FormData/append
+    const formData = new FormData();
+    formData.append("country", country);
+    formData.append("city", city);
+
+    // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+    //const response = await fetch("https://example.org/post", {
+      //method: "POST",
+      //body: JSON.stringify({ username: "example" }),
+      // …
+    //});
+    // I ended up using the Legon fetching Template from their docs
+    fetch("/select", {
+      method: "POST",
+      headers: { "Accept": "application/json" },
+      body: formData
+    })
+    .then(response => response.json())
+    .then((data) => {
+      console.log(data);
+      document.getElementById("output-text").textContent = data.output;
+    });
   });
 </script>
