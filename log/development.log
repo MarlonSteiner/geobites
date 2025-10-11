@@ -7036,3 +7036,175 @@ Processing by HomeController#select as JSON
 Completed 200 OK in 1925ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 3238)
 
 
+Started GET "/" for ::1 at 2025-10-11 05:08:11 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 219)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2631)
+  Rendered shared/_navbar.html.erb (Duration: 2.1ms | Allocations: 1441)
+  Rendered shared/_footer.html.erb (Duration: 2.8ms | Allocations: 2998)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 12273)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 13237)
+
+
+Started GET "/" for ::1 at 2025-10-11 05:09:14 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 219)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2635)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 1441)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 2998)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 12274)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 13241)
+
+
+Started GET "/" for ::1 at 2025-10-11 05:10:16 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 219)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2633)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1443)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 2999)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 12242)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 13209)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-11 05:10:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-11 05:13:34 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 219)
+  Rendered shared/_output.html.erb (Duration: 0.6ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 2632)
+  Rendered shared/_navbar.html.erb (Duration: 3.4ms | Allocations: 1445)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 3006)
+  Rendered layout layouts/application.html.erb (Duration: 2745.4ms | Allocations: 51625)
+Completed 200 OK in 2750ms (Views: 2747.6ms | ActiveRecord: 0.0ms | Allocations: 52589)
+
+
+Started GET "/" for ::1 at 2025-10-11 05:14:25 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 219)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2611)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1429)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 2962)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 12090)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 13056)
+
+
+Started GET "/" for ::1 at 2025-10-11 05:14:57 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 219)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2635)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1441)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 2998)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 12295)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 13262)
+
+
+Started GET "/" for ::1 at 2025-10-11 05:15:32 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 219)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2633)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1447)
+  Rendered shared/_footer.html.erb (Duration: 1.5ms | Allocations: 2999)
+  Rendered layout layouts/application.html.erb (Duration: 2671.4ms | Allocations: 51641)
+Completed 200 OK in 2675ms (Views: 2673.8ms | ActiveRecord: 0.0ms | Allocations: 52607)
+
+
+Started GET "/" for ::1 at 2025-10-11 05:16:04 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1931)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 1002)
+  Rendered shared/_footer.html.erb (Duration: 1.3ms | Allocations: 2730)
+  Rendered layout layouts/application.html.erb (Duration: 2664.1ms | Allocations: 49690)
+Completed 200 OK in 2666ms (Views: 2664.9ms | ActiveRecord: 0.0ms | Allocations: 49927)
+
+
+Started GET "/users/sign_in" for ::1 at 2025-10-11 05:17:49 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 540)
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2963)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1419)
+  Rendered shared/_footer.html.erb (Duration: 2.7ms | Allocations: 2999)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 12483)
+Completed 200 OK in 30ms (Views: 16.3ms | ActiveRecord: 7.5ms | Allocations: 21109)
+
+
+Started GET "/" for ::1 at 2025-10-11 05:17:52 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 219)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2623)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 1024)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 2697)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 11044)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 11742)
+
+
+Started POST "/select" for ::1 at 2025-10-11 05:18:05 +0200
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Greece", "city"=>"Kropia"}
+Completed 200 OK in 1799ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1399)
+
+
+Started POST "/select" for ::1 at 2025-10-11 05:18:11 +0200
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Greece", "city"=>"Athina"}
+Completed 200 OK in 2464ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 1330)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-11 05:18:32 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-11 05:28:47 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 219)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2637)
+  Rendered shared/_navbar.html.erb (Duration: 1.2ms | Allocations: 1445)
+  Rendered shared/_footer.html.erb (Duration: 1.4ms | Allocations: 2999)
+  Rendered layout layouts/application.html.erb (Duration: 2757.0ms | Allocations: 51629)
+Completed 200 OK in 2759ms (Views: 2757.9ms | ActiveRecord: 0.0ms | Allocations: 52597)
+
+
+Started POST "/select" for ::1 at 2025-10-11 05:28:53 +0200
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Democratic Republic of the Congo", "city"=>"Bolomba"}
+Completed 200 OK in 3359ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1404)
+
+
+Started GET "/bookmarks" for ::1 at 2025-10-11 05:29:27 +0200
+  
+ActionController::RoutingError (uninitialized constant BookmarksController):
+  
