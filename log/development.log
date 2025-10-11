@@ -6224,3 +6224,83 @@ Processing by HomeController#select as JSON
 Completed 200 OK in 2357ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 1482)
 
 
+Started GET "/" for ::1 at 2025-10-11 03:12:11 +0200
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..4)):
+  
+app/controllers/home_controller.rb:7:in `select'
+app/controllers/home_controller.rb:7:in `<class:HomeController>'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-11 03:12:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-11 03:12:51 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 203)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2617)
+  Rendered shared/_navbar.html.erb (Duration: 1.5ms | Allocations: 1444)
+  Rendered shared/_footer.html.erb (Duration: 1.9ms | Allocations: 3005)
+  Rendered layout layouts/application.html.erb (Duration: 2520.6ms | Allocations: 55340)
+Completed 200 OK in 2523ms (Views: 2521.6ms | ActiveRecord: 0.0ms | Allocations: 56308)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-11 03:12:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/select" for ::1 at 2025-10-11 03:12:57 +0200
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"Chad"}
+Completed 200 OK in 2495ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 1487)
+
+
+Started GET "/" for ::1 at 2025-10-11 03:13:50 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 203)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2599)
+  Rendered shared/_navbar.html.erb (Duration: 2.5ms | Allocations: 1439)
+  Rendered shared/_footer.html.erb (Duration: 3.1ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 12115)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 13081)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-11 03:13:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/select" for ::1 at 2025-10-11 03:13:59 +0200
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Philippines", "city"=>"Dumalinao"}
+Completed 200 OK in 2124ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 1483)
+
+
+Started GET "/" for ::1 at 2025-10-11 03:16:02 +0200
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 203)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2617)
+  Rendered shared/_navbar.html.erb (Duration: 1.3ms | Allocations: 1442)
+  Rendered shared/_footer.html.erb (Duration: 3.6ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 12244)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 13208)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-11 03:16:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/select" for ::1 at 2025-10-11 03:16:12 +0200
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Philippines", "city"=>"Cordova"}
+Completed 200 OK in 1763ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1482)
+
+

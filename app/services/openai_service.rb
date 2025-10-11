@@ -10,7 +10,7 @@ class OpenaiService
         # Using the gpt-4o model
         model: "gpt-4o",
         messages: [
-          { role: "user", content: "Give me one suprisingly fun interesting fact about #{city} in #{country} in under 100 words in the reflective style of Socrates. Make it sound fun, not formal. No starting with a greetings. If the city is unknown then just write about the country in general." }
+          { role: "user", content: "Give me one suprisingly fun interesting fact about #{city} in #{country} in between 100 - 150 words. No starting with a greeting or saying the city first. If the city is unknown then just write about the country in general. Make sure to complete the sentence." }
         ],
         max_tokens: 60
       }
