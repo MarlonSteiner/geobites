@@ -4,22 +4,22 @@
 <div class="container output-background justify-content-center mb-75">
   <div class="row justify-content-center">
     <div class="col-12 col-md-4 d-flex align-items-center justify-content-center">
-      <div id="city" class="col"></div>
-      <div id="country" class="col"></div>
-      <div id="country-emoji" class="col"></div>
+      <div id="location" class="col location-text text-center my-21"></div>
+      <!-- I might add a flag emoji in the future -->
+      <!--<div id="country-emoji" class="col"></div>-->
     </div>
   </div>
 
-  <div class="row">
+  <div class="row mx-57">
     <%= render "shared/output" %>
   </div>
-  <div class="row">
+  <div class="row mx-57">
   <!-- I was going to add a learn more feature but since I'm only using the lowest tier OpenAi api I commented it out-->
 <!-- <div class="col">
       <div><a href="https://github.com/MarlonSteiner" ><%=image_tag "url-icon.svg", class:"url-icon", alt:"learn more icon" %></a>Learn more</div>
   </div>-->
     <div class="col">
-      <div><a href="https://github.com/MarlonSteiner" ><%=image_tag "bookmark-icon-untoggled.svg", class:"url-icon", alt:"learn more icon" %></a></div>
+      <div class="col d-flex justify-content-end"><a href="https://github.com/MarlonSteiner" id="bookmark-link" style="display: none;"><%=image_tag "bookmark-icon-untoggled.svg",class:"url-icon", alt:"learn more icon" %></a></div>
   </div>
   </div>
 </div>

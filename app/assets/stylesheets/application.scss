@@ -1,5 +1,6 @@
 // Got it from the bootstrap website https://getbootstrap.com/docs/5.0/utilities/spacing/
 // Also using spacers is easy and saves me time
+// The distances I got from Figma. I converted px to rem
 $spacer: 1rem;
 $spacers: (
   0: 0,
@@ -10,8 +11,10 @@ $spacers: (
   5: $spacer * 3,
   6: 2.5rem,
   12: 0.75rem,
+  21: 1.31rem,
   28: 1.5rem,
   43: 2.69rem,
+  57: 3.56rem,
   75: 4.69rem,
   76: 4.75rem,
   94: 5.88rem,

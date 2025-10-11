@@ -26,9 +26,12 @@
     const city = data.features[0]?.text || 'Unknown';
     const country = data.features[0]?.context?.find(c => c.id.includes('country'))?.text || 'Unknown';
 
+    console.log('City:', city);
+    console.log('Country:', country);
     // Display it
-    document.getElementById("city").textContent = city;
-    document.getElementById("country").textContent = country;
+    //document.getElementById("city").textContent = city;
+    //document.getElementById("country").textContent = country;
+    document.getElementById("location").textContent = `${city}, ${country}`;
 
     // fetch and send to select in home_controller
     // I was stuck here the longest.
@@ -53,6 +56,7 @@
     .then((data) => {
       console.log(data);
       document.getElementById("output-text").textContent = data.output;
+      document.getElementById("bookmark-link").style.display = "inline";
     });
   });
 </script>

@@ -39,8 +39,16 @@
   border-radius: 4rem;
 }
 
-.output-text {
+#output-text {
+   // took the color straight from my figma design
+  color: rgba(130, 130, 130, 1);
+  font-size: 21px;
+}
 
+.location-text {
+  font-weight: 600;
+  font-size: 20px;
+  white-space: nowrap;
 }
 
 .url-icon {
