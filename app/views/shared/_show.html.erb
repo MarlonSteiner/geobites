@@ -55,7 +55,9 @@
     .then(response => response.json())
     .then((data) => {
       console.log(data);
+      // Here we select data using vanilla JS through the DOM
       document.getElementById("output-text").textContent = data.output;
+      // I added this line to make sure the bookmark appears the same time as the text output.
       document.getElementById("bookmark-link").style.display = "inline";
     });
   });

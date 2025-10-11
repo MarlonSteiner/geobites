@@ -9,6 +9,7 @@ gem "bootstrap", "~> 5.3"
 gem "geocoder"
 gem "ostruct"
 gem "ruby-openai"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.5", ">= 7.1.5.1"
 

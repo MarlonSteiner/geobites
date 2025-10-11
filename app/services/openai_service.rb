@@ -17,8 +17,9 @@ class OpenaiService
     )
 
     response.dig("choices", 0, "message", "content")
+
+  # This block goes through when there is an issue with the API call
   rescue => e
-    puts "OpenAI error"
     "Unable to generate fact. Please try another location."
   end
 end
