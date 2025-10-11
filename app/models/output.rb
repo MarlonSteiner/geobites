@@ -7,7 +7,7 @@ class Output < ApplicationRecord
   geocoded_by :address
   after_validation :geocode, if: :will_save_change_to_city?
   # Combine city and country for printing out on home screen might add flag emoji
-  def address
-    "#{city}, #{country}"
-  end
+  #def address
+    #"#{city}, #{country}"
+  #end
 end
