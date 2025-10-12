@@ -11,7 +11,11 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "home#index"
   get "bookmarks", to: "bookmarks#index"
+  post "bookmarks", to: "bookmarks#create"
+  delete "bookmarks", to: "bookmarks#destroy"
   post "/select", to: "home#select"
+
+  # CS50 AI assisted
 
   # API endpoint for getting location data & fun facts
   get "api/outputs/show", to: "api/outputs#show"

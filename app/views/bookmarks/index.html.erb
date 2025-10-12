@@ -5,7 +5,7 @@
     <div id="nav-spacer"></div>
       <!--How it works-->
     <div id="how-it-works-width" class="d-flex justify-content-center align-items-center">
-      <%= link_to "#how-it-works", class: "nav-link text-dark navbar-link fs-3" do %>
+      <%= link_to "#how-it-works", class: "nav-link text-dark navbar-link fs-3", style: "visibility: hidden" do %>
         How it works
       <% end %>
     <!--Geobites-->
@@ -18,7 +18,7 @@
         </div>
       <% end %>
     <!--Bookmarks-->
-      <%= link_to  bookmarks_path, class: "nav-link text-dark navbar-link fs-3" do %>
+      <%= link_to  bookmarks_path, class: "nav-link text-dark navbar-link fs-3", style: "visibility: hidden" do %>
             Bookmarks
         </div>
       <% end %>

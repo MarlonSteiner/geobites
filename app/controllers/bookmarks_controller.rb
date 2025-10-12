@@ -17,7 +17,7 @@ class BookmarksController < ApplicationController
   end
 
   def destroy
-    current_user.bookmarks.find(params[[:id]]).destroy
+    current_user.bookmarks.find(params[:id]).destroy
   end
 
   private
