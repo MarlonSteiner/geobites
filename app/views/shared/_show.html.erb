@@ -1,8 +1,8 @@
-<!--The code structure was taken from Mapbox Docs AI and then I worked from there. Don't think there was anyway I could have written this from scratch-->
 <div class="d-flex justify-content-center mb-12">
   <div id="map"></div>
 </div>
 
+<!--The JS code structure was taken from Mapbox Docs AI and then I worked from there. Don't think there was anyway I could have written this from scratch-->
 <script>
   mapboxgl.accessToken = "<%= ENV["MAPBOX_TOKEN"] %>";
 
@@ -31,6 +31,7 @@
     // Display it
     //document.getElementById("city").textContent = city;
     //document.getElementById("country").textContent = country;
+    // I ended up making "location" because it seemed like the easiest way to join city and country together in one line
     document.getElementById("location").textContent = `${city}, ${country}`;
 
     // fetch and send to select in home_controller

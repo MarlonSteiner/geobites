@@ -4,9 +4,8 @@
     <!--Horizontal Spacer for centering-->
     <div id="nav-spacer"></div>
       <!--How it works-->
-      <!--Made it hidden since I want to keep the layout but not display it-->
     <div id="how-it-works-width" class="d-flex justify-content-center align-items-center">
-      <%= link_to "#how-it-works", class: "nav-link text-dark navbar-link fs-3", style: "visibility: hidden" do %>
+      <%= link_to "#how-it-works", class: "nav-link text-dark navbar-link fs-3" do %>
         How it works
       <% end %>
     <!--Geobites-->
@@ -19,8 +18,7 @@
         </div>
       <% end %>
     <!--Bookmarks-->
-    <!--Made it hidden since I want to keep the layout but not display it-->
-      <%= link_to  bookmarks_path, class: "nav-link text-dark navbar-link fs-3", style: "visibility: hidden" do %>
+      <%= link_to  bookmarks_path, class: "nav-link text-dark navbar-link fs-3" do %>
             Bookmarks
         </div>
       <% end %>
@@ -28,27 +26,33 @@
 
     <!--User Login-->
     <ul class="navbar-nav" style="width: 208px;">
-      <% if user_signed_in? %>
-      <li class="nav-item active">
-        <%= link_to "How it works", "#How it works", class: "nav-link" %>
+      <li>
+        <% if user_signed_in? %>
+            <%= link_to image_tag("user-icon.svg", id: "user-icon", alt: "profile"), destroy_user_session_path, data: { turbo_method: :delete }, class: "dropdown-item"%>
+        <% else %>
+            <%= link_to image_tag("user-icon.svg", id: "user-icon", alt: "login"), new_user_session_path, class: "dropdown-item"%>
+        <% end %>
       </li>
-      <li class="nav-item active">
-        <%= link_to "Home", "#", class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Home", "#", class: "nav-link" %>
-      </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to image_tag("user-icon.svg", id: "user-icon", alt: "login"), new_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item"%>
-        </li>
-      <% end %>
     </ul>
   </div>
 </nav>
 <!-- Div used as a spacer to prevent content going under the navbar -->
 <div style="height: 120px;"></div>
-<h1>Bookmark#index</h1>
-<p>Find me in app/views/bookmark/index.html.erb</p>
+
+<div class="d-flex justify-content-center bookmark-div mt-5 mb-2">
+  <div class="bookmark-div my-5"><h1>Bookmarks</h1></div>
+</div>
+
+<!-- Iteration code structure gotten from my old movie list project which is public on github -->
+<div class="d-flex gap-4 flex-wrap justify-content-center px-4">
+  <!--<% @bookmarks.each do |bookmark| %>
+    <div class="card mb-3">
+      <div class="card-body">
+
+      </div>
+    </div>
+  <% end %>-->
+</div>
+
 <!-- Styling spacer -->
 <div style="height: 120px;"></div>
