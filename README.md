@@ -1,26 +1,58 @@
-# README
+# 🌍 GeoBites
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Discover the world, one fact at a time.
+<br>
 
-Things you may want to cover:
+## Preview
 
-* Ruby version
+## Overview
 
-* System dependencies
+## Tech Stack
+<ul>
+  <li>Ruby on rails</li>
+  <li>Javascript</li>
+  <li>CSS</li>
+  <li>HTML</li>
+  <li>SCSS</li>
+  <li>Bootstrap</li>
+  <li>Devise</li>
+  <li>OpenAI API</li>
+  <li>MapBox API</li>
+</ul>
 
-* Configuration
+## Features
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
 
-* Database creation
+## How it works
+<ul>
+  <li>Explore the Globe & Click on a Location</li>
+  <li>Learn a random Fact</li>
+  <li>Bookmark what's interesting</li>
+</ul>
 
-* Database initialization
+## Setup & Installation
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
 
-* How to run the test suite
+## Future Improvements
+<ul>
+  <li>Generate Flag Emoji after city and country</li>
+  <li>Dynamic Layout to Mobile</li>
+  <li>Phone App</li>
+</ul>
 
-* Services (job queues, cache servers, search engines, etc.)
+## Author
 
-* Deployment instructions
+<p>Marlon Steiner</p>
+<p></p>Fullstack Developer</p>
+<p>📍 St.Gallen, Switzerland</p>
+<p>msteiner.sudo@gmail.com</p>
+<p><a href="https://www.linkedin.com/in/marlon-steine">LinkedIn</a> <a href="https://flowton.io/">Start-Up</a></p>
 
-* ...
-
-Secrets managed via Rails credentials and local .env (ignored).
