@@ -60,7 +60,7 @@
     <div class="col">
         <!-- Display none only works when I integrate it directly into the html. With the use of Javascript, we can make it only appear when there is an output-->
       <div class="col d-flex justify-content-end">
-        <%= link_to bookmarks_path, id: "bookmark-link", style:"display: none;", data: { turbo_method: :post } do%>
+        <%= button_to bookmarks_path, id: "bookmark-link", style:"display: none; border: none;", data: { turbo_method: :post, turbo_frame: "_top"} do%>
           <%=image_tag "bookmark-icon-untoggled.svg", class:"url-icon", alt:"bookmark" %></a>
         <% end %>
       </div>
