@@ -46,7 +46,7 @@
 <!-- Iteration code structure gotten from my old movie list project which is public on github -->
 <div class="d-flex gap-4 flex-wrap justify-content-center px-4">
   <% @bookmarks.each do |bookmark| %>
-    <div class="card mb-3">
+    <div class="card mb-3" id="bookmark-<%= bookmark.id %>">
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-start mb-2">
           <h5 class="card-title"><%= bookmark.output.city %>,<%= bookmark.output.country %></h5>
@@ -60,3 +60,23 @@
 
 <!-- Styling spacer -->
 <div style="height: 120px;"></div>
+
+<script>
+  document.querySelectorAll(".delete-bookmark").forEach(button => {
+    button.addEventListener("click", function() {
+      const bookmarkId = this.dataset.bookmarkId;
+
+        fetch(`/bookmarks/${bookmarkId}`, {
+          method: "DELETE",
+          headers: {
+            "Content-Type": "application/json"
+          }
+        })
+        .then(response => {
+          if (response.ok) {
+            document.getElementById(`bookmark-${bookmarkId}`).remove();
+          }
+      });
+    })
+  });
+</script>
