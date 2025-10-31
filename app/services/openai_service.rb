@@ -3,7 +3,12 @@ class OpenaiService
   def self.generate_fact(city, country)
     puts "API Key present: #{ENV['OPENAI_ACCESS_TOKEN'].present?}"
     puts "API Key length: #{ENV['OPENAI_ACCESS_TOKEN']&.length}"
-    client = OpenAI::Client.new(access_token: ENV['OPENAI_ACCESS_TOKEN'])
+    # client = OpenAI::Client.new(access_token: ENV['OPENAI_ACCESS_TOKEN'])
+    client = OpenAI::Client.new(
+      access_token: ENV['OPENAI_ACCESS_TOKEN'],
+      request_timeout: 240,
+      ssl_verify: false
+    )
 
     response = client.chat(
       parameters: {

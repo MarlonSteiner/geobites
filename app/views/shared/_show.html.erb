@@ -14,6 +14,9 @@
     center: [0, 20]
   });
 
+  // Empty changable variable to store the current bookmarkId in
+  let currentOutputId;
+
   map.on('click', async (e) => {
 
     const { lat, lng } = e.lngLat;
@@ -60,6 +63,24 @@
       document.getElementById("output-text").textContent = data.output;
       // I added this line to make sure the bookmark appears the same time as the text output.
       document.getElementById("bookmark-link").style.display = "inline";
+
+      //save the current output_id for bookmarking
+      currentOutputId = data.output_id;
+    });
+  });
+
+  // Bookmark handling that I will transfer to a separate js file if it doesn't break.
+  document.getElementById("bookmark-link").addEventListener("click", function() {
+    const bookmarkData = new FormData();
+    bookmarkData.append("output_id", currentOutputId);
+
+    fetch("/bookmarks", {
+      method: "POST",
+      headers: { "Accept": "application/json" },
+      body: bookmarkData
+    })
+    .then(response => {
+      console.log("Bookmark saved");
     });
   });
 </script>

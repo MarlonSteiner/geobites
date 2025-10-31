@@ -12500,3 +12500,428 @@ Completed 500 Internal Server Error in 3947ms (ActiveRecord: 1.9ms | Allocations
 OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
   
 app/controllers/home_controller.rb:16:in `select'
+Started GET "/" for ::1 at 2025-10-30 03:20:35 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 0.2ms | Allocations: 222)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 8967)
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 16778)
+Completed 200 OK in 21ms (Views: 18.1ms | ActiveRecord: 1.4ms | Allocations: 17753)
+
+
+Started GET "/bookmarks" for ::1 at 2025-10-30 03:21:37 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2456)
+  Rendered shared/_footer.html.erb (Duration: 11.4ms | Allocations: 2718)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 9572)
+Completed 200 OK in 42ms (Views: 23.9ms | ActiveRecord: 0.5ms | Allocations: 15934)
+
+
+Started POST "/select" for ::1 at 2025-10-30 03:25:35 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"Sudan"}
+Completed 500 Internal Server Error in 2998ms (ActiveRecord: 0.3ms | Allocations: 9344)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:16:in `select'
+Started POST "/select" for ::1 at 2025-10-30 03:25:38 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"Ethiopia"}
+Started POST "/select" for ::1 at 2025-10-30 03:25:41 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Oman", "city"=>"ولاية هيما"}
+Completed 500 Internal Server Error in 2686ms (ActiveRecord: 0.0ms | Allocations: 156389)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:16:in `select'
+Started POST "/select" for ::1 at 2025-10-30 03:25:43 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"Ukraine"}
+Completed 500 Internal Server Error in 2867ms (ActiveRecord: 0.0ms | Allocations: 534399)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:16:in `select'
+Started POST "/select" for ::1 at 2025-10-30 03:25:45 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"France", "city"=>"Ygrande"}
+Completed 500 Internal Server Error in 3052ms (ActiveRecord: 0.0ms | Allocations: 534394)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:16:in `select'
+Completed 500 Internal Server Error in 2181ms (ActiveRecord: 0.0ms | Allocations: 532514)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:16:in `select'
+Started GET "/" for ::1 at 2025-10-31 18:10:37 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (7.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 0.7ms | Allocations: 222)
+  Rendered shared/_output.html.erb (Duration: 0.4ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 36.8ms | Allocations: 8498)
+  Rendered shared/_footer.html.erb (Duration: 3.8ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 48.7ms | Allocations: 16309)
+Completed 200 OK in 53ms (Views: 38.1ms | ActiveRecord: 12.3ms | Allocations: 17278)
+
+
+Started POST "/select" for ::1 at 2025-10-31 18:12:27 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Russia", "city"=>"Суринда"}
+Completed 500 Internal Server Error in 3474ms (ActiveRecord: 0.0ms | Allocations: 8880)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:16:in `select'
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-31 18:44:33 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 2.7ms | Allocations: 270)
+  Rendered shared/_output.html.erb (Duration: 0.2ms | Allocations: 90)
+  Rendered home/index.html.erb within layouts/application (Duration: 101.0ms | Allocations: 46384)
+  Rendered shared/_footer.html.erb (Duration: 2.3ms | Allocations: 3127)
+  Rendered layout layouts/application.html.erb (Duration: 107.7ms | Allocations: 54451)
+Completed 200 OK in 113ms (Views: 108.8ms | ActiveRecord: 1.7ms | Allocations: 56898)
+
+
+Started POST "/select" for ::1 at 2025-10-31 18:44:36 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"Niger"}
+Completed 500 Internal Server Error in 2948ms (ActiveRecord: 0.7ms | Allocations: 12013)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:13:in `select'
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-31 18:48:56 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 266)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered home/index.html.erb within layouts/application (Duration: 51.7ms | Allocations: 46573)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 3128)
+  Rendered layout layouts/application.html.erb (Duration: 57.9ms | Allocations: 54640)
+Completed 200 OK in 62ms (Views: 59.0ms | ActiveRecord: 1.2ms | Allocations: 57087)
+
+
+Started POST "/select" for ::1 at 2025-10-31 18:49:07 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"Niger"}
+Completed 500 Internal Server Error in 2273ms (ActiveRecord: 0.4ms | Allocations: 11926)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:13:in `select'
+Started GET "/" for ::1 at 2025-10-31 18:52:57 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 24.3ms | Allocations: 3837)
+  Rendered shared/_footer.html.erb (Duration: 3.4ms | Allocations: 2738)
+  Rendered layout layouts/application.html.erb (Duration: 32.8ms | Allocations: 11062)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.2ms | Allocations: 11307)
+
+
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-31 18:53:17 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 266)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered home/index.html.erb within layouts/application (Duration: 45.6ms | Allocations: 46547)
+  Rendered shared/_footer.html.erb (Duration: 2.5ms | Allocations: 3129)
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 54607)
+Completed 200 OK in 64ms (Views: 60.2ms | ActiveRecord: 1.2ms | Allocations: 57054)
+
+
+Started POST "/select" for ::1 at 2025-10-31 18:53:24 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"Niger"}
+Completed 500 Internal Server Error in 2434ms (ActiveRecord: 1.2ms | Allocations: 11928)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:13:in `select'
+Started GET "/" for ::1 at 2025-10-31 18:54:17 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 0.1ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 3816)
+  Rendered shared/_footer.html.erb (Duration: 5.3ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 11038)
+Completed 200 OK in 34ms (Views: 32.2ms | ActiveRecord: 0.2ms | Allocations: 11281)
+
+
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-31 18:54:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 2.2ms | Allocations: 270)
+  Rendered shared/_output.html.erb (Duration: 1.2ms | Allocations: 90)
+  Rendered home/index.html.erb within layouts/application (Duration: 74.0ms | Allocations: 46574)
+  Rendered shared/_footer.html.erb (Duration: 2.1ms | Allocations: 3128)
+  Rendered layout layouts/application.html.erb (Duration: 80.5ms | Allocations: 54641)
+Completed 200 OK in 85ms (Views: 81.5ms | ActiveRecord: 1.7ms | Allocations: 57088)
+
+
+Started POST "/select" for ::1 at 2025-10-31 18:54:42 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"Mali"}
+Completed 500 Internal Server Error in 2829ms (ActiveRecord: 0.6ms | Allocations: 11951)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:13:in `select'
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-31 18:57:19 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.4ms | Allocations: 270)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered home/index.html.erb within layouts/application (Duration: 39.7ms | Allocations: 35101)
+  Rendered shared/_footer.html.erb (Duration: 1.9ms | Allocations: 3115)
+  Rendered layout layouts/application.html.erb (Duration: 44.9ms | Allocations: 43057)
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.0ms | Allocations: 45502)
+
+
+Started POST "/select" for ::1 at 2025-10-31 18:57:25 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Nigeria", "city"=>"Kuje"}
+Completed 500 Internal Server Error in 3366ms (ActiveRecord: 2.7ms | Allocations: 13634)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:13:in `select'
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-31 19:07:49 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 266)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered home/index.html.erb within layouts/application (Duration: 42.5ms | Allocations: 34787)
+  Rendered shared/_footer.html.erb (Duration: 2.7ms | Allocations: 3128)
+  Rendered layout layouts/application.html.erb (Duration: 55.8ms | Allocations: 42757)
+Completed 200 OK in 60ms (Views: 58.3ms | ActiveRecord: 0.0ms | Allocations: 45204)
+
+
+Started GET "/" for ::1 at 2025-10-31 19:07:55 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 4143)
+  Rendered shared/_footer.html.erb (Duration: 1.1ms | Allocations: 2699)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 11226)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 11464)
+
+
+Started GET "/" for ::1 at 2025-10-31 19:08:02 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 3164)
+  Rendered shared/_footer.html.erb (Duration: 8.7ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 10241)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 10478)
+
+
+Started GET "/" for ::1 at 2025-10-31 19:08:30 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.0ms | Allocations: 12)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3161)
+  Rendered shared/_footer.html.erb (Duration: 1.9ms | Allocations: 2716)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 10261)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 10498)
+
+
+Started POST "/select" for ::1 at 2025-10-31 19:08:33 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Nigeria", "city"=>"Pankshin"}
+Completed 500 Internal Server Error in 5655ms (ActiveRecord: 2.9ms | Allocations: 13628)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:13:in `select'
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-31 19:12:25 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 266)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered home/index.html.erb within layouts/application (Duration: 30.9ms | Allocations: 36174)
+  Rendered shared/_footer.html.erb (Duration: 2.4ms | Allocations: 3128)
+  Rendered layout layouts/application.html.erb (Duration: 43.8ms | Allocations: 44233)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.0ms | Allocations: 46680)
+
+
+Started POST "/select" for ::1 at 2025-10-31 19:12:36 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Nigeria", "city"=>"Lokoja"}
+Completed 500 Internal Server Error in 2832ms (ActiveRecord: 1.9ms | Allocations: 13623)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:13:in `select'
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-31 19:14:43 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 266)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered home/index.html.erb within layouts/application (Duration: 29.2ms | Allocations: 36150)
+  Rendered shared/_footer.html.erb (Duration: 2.8ms | Allocations: 3128)
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 44152)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.0ms | Allocations: 46599)
+
+
+Started POST "/select" for ::1 at 2025-10-31 19:14:46 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"Senegal"}
+Completed 500 Internal Server Error in 1825ms (ActiveRecord: 3.7ms | Allocations: 13651)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:13:in `select'
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-31 19:17:40 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 266)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered home/index.html.erb within layouts/application (Duration: 32.3ms | Allocations: 36174)
+  Rendered shared/_footer.html.erb (Duration: 8.3ms | Allocations: 3120)
+  Rendered layout layouts/application.html.erb (Duration: 43.7ms | Allocations: 44135)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.0ms | Allocations: 46582)
+
+
+Started POST "/select" for ::1 at 2025-10-31 19:17:43 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"Mali"}
+Completed 500 Internal Server Error in 1995ms (ActiveRecord: 2.9ms | Allocations: 13619)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:13:in `select'
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for ::1 at 2025-10-31 19:20:38 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 0.3ms | Allocations: 266)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered home/index.html.erb within layouts/application (Duration: 33.6ms | Allocations: 36198)
+  Rendered shared/_footer.html.erb (Duration: 8.2ms | Allocations: 3120)
+  Rendered layout layouts/application.html.erb (Duration: 44.6ms | Allocations: 44159)
+Completed 200 OK in 48ms (Views: 46.5ms | ActiveRecord: 0.0ms | Allocations: 46606)
+
+
+Started POST "/select" for ::1 at 2025-10-31 19:20:41 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"Senegal"}
+Completed 500 Internal Server Error in 3491ms (ActiveRecord: 3.2ms | Allocations: 13720)
+
+
+  
+OpenSSL::SSL::SSLError (SSL_connect returned=1 errno=0 peeraddr=127.0.0.1:10011 state=error: certificate verify failed (unable to get certificate CRL)):
+  
+app/controllers/home_controller.rb:13:in `select'

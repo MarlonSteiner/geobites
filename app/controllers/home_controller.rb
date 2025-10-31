@@ -1,9 +1,6 @@
 class HomeController < ApplicationController
   skip_before_action :verify_authenticity_token, only: [:select]
 
-  def index
-  end
-
   def select
     # Make the country and city variables
     country = params[:country]
@@ -16,6 +13,7 @@ class HomeController < ApplicationController
     @output = Output.create(city: city, country: country, text: output)
 
     # Kept making the mistake rendering an instance...
-    render json: { output: output }
+    # We are sending back both the text & output_id
+    render json: { output: output, output_id: @output.id }
   end
 end
