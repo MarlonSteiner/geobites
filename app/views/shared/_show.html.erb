@@ -43,7 +43,8 @@
     const formData = new FormData();
     formData.append("country", country);
     formData.append("city", city);
-
+    formData.append("latitude", lat);
+    formData.append("longitude", lng);
     // https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
     //const response = await fetch("https://example.org/post", {
       //method: "POST",

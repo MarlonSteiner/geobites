@@ -45,13 +45,14 @@
 
 <!-- Iteration code structure gotten from my old movie list project which is public on github -->
 <div class="d-flex gap-4 flex-wrap justify-content-center px-4">
-  <!--<% @bookmarks.each do |bookmark| %>
+  <% @bookmarks.each do |bookmark| %>
     <div class="card mb-3">
       <div class="card-body">
-
+        <h5 class="card-title"><%= bookmark.output.city %>,<%= bookmark.output.country %></h5>
+        <p class="card-text"><%= bookmark.output.text %></p>
       </div>
     </div>
-  <% end %>-->
+  <% end %>
 </div>
 
 <!-- Styling spacer -->
