@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'bookmark/index'
   devise_for :users
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -10,9 +9,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
-  get "bookmarks", to: "bookmarks#index"
-  post "bookmarks", to: "bookmarks#create"
-  delete "bookmarks", to: "bookmarks#destroy"
+  resources :bookmarks, only: [:index, :create, :destroy]
   post "/select", to: "home#select"
 
   # CS50 AI assisted

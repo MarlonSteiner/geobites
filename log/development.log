@@ -15169,3 +15169,574 @@ Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-
   
 ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
   
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/bookmarks" for ::1 at 2025-10-31 22:44:01 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.1ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?)[0m  [["id", 2], ["id", 3], ["id", 4]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 58.7ms | Allocations: 47940)
+  Rendered shared/_footer.html.erb (Duration: 2.6ms | Allocations: 3135)
+  Rendered layout layouts/application.html.erb (Duration: 65.7ms | Allocations: 56065)
+Completed 200 OK in 97ms (Views: 67.9ms | ActiveRecord: 2.0ms | Allocations: 76792)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 22:44:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/bookmarks?class=btn-close&data%5Bconfirm%5D=remove+bookmark%3F&method=delete" for ::1 at 2025-10-31 22:44:08 +0100
+Processing by BookmarksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "class"=>"btn-close", "data"=>{"confirm"=>"remove bookmark?"}, "method"=>"delete"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mBookmark Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."user_id" = ? AND "bookmarks"."output_id" IS NULL LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+Completed 200 OK in 5ms (ActiveRecord: 0.8ms | Allocations: 4969)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 22:44:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-31 22:47:29 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 2.4ms | Allocations: 1115)
+  Rendered shared/_output.html.erb (Duration: 0.4ms | Allocations: 90)
+  Rendered home/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 5410)
+  Rendered shared/_footer.html.erb (Duration: 2.2ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 12646)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.2ms | Allocations: 13167)
+
+
+Started GET "/users/sign_out" for ::1 at 2025-10-31 22:47:44 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (7.4ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", nil], ["updated_at", "2025-10-31 21:47:44.822333"], ["id", 1]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://[::1]:3000/
+Completed 303 See Other in 18ms (ActiveRecord: 8.2ms | Allocations: 6909)
+
+
+Started GET "/" for ::1 at 2025-10-31 22:47:44 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered shared/_show.html.erb (Duration: 1.2ms | Allocations: 810)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3826)
+  Rendered shared/_footer.html.erb (Duration: 2.8ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 11061)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 11298)
+
+
+Started GET "/bookmarks" for ::1 at 2025-10-31 22:48:01 +0100
+Processing by BookmarksController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 262)
+
+
+Started GET "/users/sign_in" for ::1 at 2025-10-31 22:48:01 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 540)
+  Rendered /Users/marlon/.rbenv/versions/3.3.5/lib/ruby/gems/3.3.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2517)
+  Rendered shared/_footer.html.erb (Duration: 4.6ms | Allocations: 2914)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 9996)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 11438)
+
+
+Started POST "/users/sign_in" for ::1 at 2025-10-31 22:48:07 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"marlon.steiner1999@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "marlon.steiner1999@yahoo.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Update (0.8ms)[0m  [1m[33mUPDATE "users" SET "remember_created_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_created_at", "2025-10-31 21:48:07.476261"], ["updated_at", "2025-10-31 21:48:07.476418"], ["id", 1]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://[::1]:3000/bookmarks
+Completed 303 See Other in 268ms (ActiveRecord: 2.2ms | Allocations: 7034)
+
+
+Started GET "/bookmarks" for ::1 at 2025-10-31 22:48:07 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.2ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?)[0m  [["id", 2], ["id", 3], ["id", 4]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 3004)
+  Rendered shared/_footer.html.erb (Duration: 1.6ms | Allocations: 2711)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 10106)
+Completed 200 OK in 10ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 11843)
+
+
+Started GET "/" for ::1 at 2025-10-31 22:48:10 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 1.8ms | Allocations: 810)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 8.8ms | Allocations: 4287)
+  Rendered shared/_footer.html.erb (Duration: 2.4ms | Allocations: 2739)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 11503)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 0.3ms | Allocations: 11739)
+
+
+Started POST "/select" for ::1 at 2025-10-31 22:48:24 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"New Zealand", "latitude"=>"-41.22115800010068", "longitude"=>"172.42593154145857"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mOutput Create (1.9ms)[0m  [1m[32mINSERT INTO "outputs" ("city", "country", "text", "source", "created_at", "updated_at", "latitude", "longitude") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["city", "New Zealand"], ["country", "Unknown"], ["text", "New Zealand is home to a unique and enchanting tradition called \"bush rugby,\" an informal variant of rugby played in the stunning natural settings of the country. Unlike conventional rugby, which is played on a standard field, bush rugby often takes place in lush meadows, forest clearings, or even along"], ["source", nil], ["created_at", "2025-10-31 21:48:27.609949"], ["updated_at", "2025-10-31 21:48:27.609949"], ["latitude", 46.475435], ["longitude", -62.256118]]
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+Completed 200 OK in 3270ms (Views: 0.2ms | ActiveRecord: 3.4ms | Allocations: 6827)
+
+
+Started POST "/select" for ::1 at 2025-10-31 22:48:37 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"New Zealand", "city"=>"Mangakino", "latitude"=>"-38.46857002644776", "longitude"=>"175.67550528484884"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mOutput Create (1.9ms)[0m  [1m[32mINSERT INTO "outputs" ("city", "country", "text", "source", "created_at", "updated_at", "latitude", "longitude") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["city", "Mangakino"], ["country", "New Zealand"], ["text", "Mangakino, a small town in New Zealand's Waikato region, was originally established as a temporary construction village for workers building the large hydroelectric dams along the Waikato River in the late 1940s and 1950s. What makes it particularly intriguing is how this settlement, intended"], ["source", nil], ["created_at", "2025-10-31 21:48:39.817542"], ["updated_at", "2025-10-31 21:48:39.817542"], ["latitude", -38.371597], ["longitude", 175.77441]]
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+Completed 200 OK in 2488ms (Views: 0.2ms | ActiveRecord: 2.2ms | Allocations: 3983)
+
+
+Started POST "/bookmarks" for ::1 at 2025-10-31 22:48:41 +0100
+Processing by BookmarksController#create as JSON
+  Parameters: {"output_id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mOutput Load (1.1ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mBookmark Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."user_id" = ? AND "bookmarks"."output_id" = ? LIMIT ?[0m  [["user_id", 1], ["output_id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mBookmark Create (0.2ms)[0m  [1m[32mINSERT INTO "bookmarks" ("user_id", "output_id", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["user_id", 1], ["output_id", 6], ["created_at", "2025-10-31 21:48:41.994238"], ["updated_at", "2025-10-31 21:48:41.994238"]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+Completed 200 OK in 10ms (ActiveRecord: 1.7ms | Allocations: 6049)
+
+
+Started GET "/bookmarks" for ::1 at 2025-10-31 22:48:44 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.2ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?, ?)[0m  [["id", 2], ["id", 3], ["id", 4], ["id", 6]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 10.1ms | Allocations: 3236)
+  Rendered shared/_footer.html.erb (Duration: 4.8ms | Allocations: 2739)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 10463)
+Completed 200 OK in 23ms (Views: 20.5ms | ActiveRecord: 0.3ms | Allocations: 12209)
+
+
+Started GET "/" for ::1 at 2025-10-31 22:49:33 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 2.1ms | Allocations: 810)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 4288)
+  Rendered shared/_footer.html.erb (Duration: 3.9ms | Allocations: 2695)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 11372)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.1ms | Allocations: 11608)
+
+
+Started GET "/bookmarks" for ::1 at 2025-10-31 22:51:35 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.1ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?, ?)[0m  [["id", 2], ["id", 3], ["id", 4], ["id", 6]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3231)
+  Rendered shared/_footer.html.erb (Duration: 4.3ms | Allocations: 2740)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 10375)
+Completed 200 OK in 21ms (Views: 17.5ms | ActiveRecord: 0.4ms | Allocations: 12100)
+
+
+Started POST "/bookmarks?class=btn-close&data%5Bconfirm%5D=remove+bookmark%3F&method=delete" for ::1 at 2025-10-31 22:51:45 +0100
+Processing by BookmarksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "class"=>"btn-close", "data"=>{"confirm"=>"remove bookmark?"}, "method"=>"delete"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mBookmark Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."user_id" = ? AND "bookmarks"."output_id" IS NULL LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+Completed 200 OK in 10ms (ActiveRecord: 2.1ms | Allocations: 4271)
+
+
+Started POST "/bookmarks?class=btn-close&data%5Bconfirm%5D=remove+bookmark%3F&method=delete" for ::1 at 2025-10-31 22:51:52 +0100
+Processing by BookmarksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "class"=>"btn-close", "data"=>{"confirm"=>"remove bookmark?"}, "method"=>"delete"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mBookmark Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."user_id" = ? AND "bookmarks"."output_id" IS NULL LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+Completed 200 OK in 8ms (ActiveRecord: 1.2ms | Allocations: 4280)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 22:51:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 22:52:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 22:52:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/bookmarks" for ::1 at 2025-10-31 22:52:49 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.1ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?, ?)[0m  [["id", 2], ["id", 3], ["id", 4], ["id", 6]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 12843)
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | Allocations: 3007)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 20660)
+Completed 200 OK in 23ms (Views: 14.4ms | ActiveRecord: 1.6ms | Allocations: 29804)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 22:52:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-31 22:53:49 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 1.6ms | Allocations: 1070)
+  Rendered shared/_output.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 8.9ms | Allocations: 5277)
+  Rendered shared/_footer.html.erb (Duration: 2.4ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 12513)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.1ms | Allocations: 13026)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 22:53:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started POST "/select" for ::1 at 2025-10-31 22:53:57 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Unknown", "city"=>"Niger", "latitude"=>"18.37546659709281", "longitude"=>"9.542953893226581"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mOutput Create (5.4ms)[0m  [1m[32mINSERT INTO "outputs" ("city", "country", "text", "source", "created_at", "updated_at", "latitude", "longitude") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["city", "Niger"], ["country", "Unknown"], ["text", "The Gerewol festival, celebrated by the Wodaabe people of Niger, is a surprising and captivating cultural event that showcases an unconventional aspect of beauty and romance. Each year, this nomadic community hosts a unique gathering where young men participate in a beauty contest known as Yaake. Dressed in vibrant"], ["source", nil], ["created_at", "2025-10-31 21:53:59.794955"], ["updated_at", "2025-10-31 21:53:59.794955"], ["latitude", 8.986624], ["longitude", 7.204224]]
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+Completed 200 OK in 2664ms (Views: 0.9ms | ActiveRecord: 6.0ms | Allocations: 4415)
+
+
+Started POST "/select" for ::1 at 2025-10-31 22:54:08 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Malaysia", "city"=>"Kuala Lipis", "latitude"=>"4.678259081951367", "longitude"=>"101.96605476930796"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mOutput Create (2.8ms)[0m  [1m[32mINSERT INTO "outputs" ("city", "country", "text", "source", "created_at", "updated_at", "latitude", "longitude") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["city", "Kuala Lipis"], ["country", "Malaysia"], ["text", "Kuala Lipis, once the capital of the state of Pahang from 1898 to 1953, is a hidden gem rich in history and heritage. A fascinating fact about this town is its connection to the \"center\" of Peninsular Malaysia. There's a marker stone located near the"], ["source", nil], ["created_at", "2025-10-31 21:54:11.276250"], ["updated_at", "2025-10-31 21:54:11.276250"], ["latitude", 4.185733], ["longitude", 102.054245]]
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+Completed 200 OK in 2822ms (Views: 0.3ms | ActiveRecord: 3.1ms | Allocations: 4020)
+
+
+Started POST "/bookmarks" for ::1 at 2025-10-31 22:54:23 +0100
+Processing by BookmarksController#create as JSON
+  Parameters: {"output_id"=>"8"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mOutput Load (1.7ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mBookmark Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."user_id" = ? AND "bookmarks"."output_id" = ? LIMIT ?[0m  [["user_id", 1], ["output_id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mBookmark Create (0.2ms)[0m  [1m[32mINSERT INTO "bookmarks" ("user_id", "output_id", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["user_id", 1], ["output_id", 8], ["created_at", "2025-10-31 21:54:23.609188"], ["updated_at", "2025-10-31 21:54:23.609188"]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+Completed 200 OK in 16ms (ActiveRecord: 2.4ms | Allocations: 6174)
+
+
+Started GET "/bookmarks" for ::1 at 2025-10-31 22:54:49 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.2ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?, ?, ?)[0m  [["id", 2], ["id", 3], ["id", 4], ["id", 6], ["id", 8]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 3504)
+  Rendered shared/_footer.html.erb (Duration: 3.6ms | Allocations: 2737)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 10727)
+Completed 200 OK in 24ms (Views: 19.5ms | ActiveRecord: 0.3ms | Allocations: 12438)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 22:54:49 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/bookmarks" for ::1 at 2025-10-31 22:55:29 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.1ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?, ?, ?)[0m  [["id", 2], ["id", 3], ["id", 4], ["id", 6], ["id", 8]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 70.2ms | Allocations: 48417)
+  Rendered shared/_footer.html.erb (Duration: 9.0ms | Allocations: 3134)
+  Rendered layout layouts/application.html.erb (Duration: 85.5ms | Allocations: 56541)
+Completed 200 OK in 133ms (Views: 88.6ms | ActiveRecord: 2.1ms | Allocations: 77250)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 22:55:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-31 23:00:33 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 1.8ms | Allocations: 1116)
+  Rendered shared/_output.html.erb (Duration: 0.1ms | Allocations: 90)
+  Rendered home/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 9581)
+  Rendered shared/_footer.html.erb (Duration: 2.6ms | Allocations: 3004)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 17407)
+Completed 200 OK in 20ms (Views: 18.2ms | ActiveRecord: 1.2ms | Allocations: 18381)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 23:00:33 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/bookmarks" for ::1 at 2025-10-31 23:00:36 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.1ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?, ?, ?)[0m  [["id", 2], ["id", 3], ["id", 4], ["id", 6], ["id", 8]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 13072)
+  Rendered shared/_footer.html.erb (Duration: 2.2ms | Allocations: 2737)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 20299)
+Completed 200 OK in 34ms (Views: 20.3ms | ActiveRecord: 1.1ms | Allocations: 24921)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 23:00:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-31 23:00:42 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 0.7ms | Allocations: 810)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 4310)
+  Rendered shared/_footer.html.erb (Duration: 2.3ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 11533)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.2ms | Allocations: 11770)
+
+
+Started POST "/select" for ::1 at 2025-10-31 23:00:51 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Pakistan", "city"=>"Quetta", "latitude"=>"30.144267913096854", "longitude"=>"66.99929177192755"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mOutput Create (2.0ms)[0m  [1m[32mINSERT INTO "outputs" ("city", "country", "text", "source", "created_at", "updated_at", "latitude", "longitude") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["city", "Quetta"], ["country", "Pakistan"], ["text", "The Hanna Lake, a stunning turquoise reservoir nestled in the hills just outside Quetta, offers a surprisingly fun escape for both locals and tourists, providing an unexpected oasis in the otherwise rugged terrain of Balochistan. Built during the British colonial era, the lake is surrounded by scenic landscapes and rugged mountains"], ["source", nil], ["created_at", "2025-10-31 22:00:56.829057"], ["updated_at", "2025-10-31 22:00:56.829057"], ["latitude", 30.19444], ["longitude", 67.01428]]
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+Completed 200 OK in 5239ms (Views: 0.3ms | ActiveRecord: 3.9ms | Allocations: 7709)
+
+
+Started POST "/bookmarks" for ::1 at 2025-10-31 23:00:59 +0100
+Processing by BookmarksController#create as JSON
+  Parameters: {"output_id"=>"9"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mOutput Load (1.1ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mBookmark Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."user_id" = ? AND "bookmarks"."output_id" = ? LIMIT ?[0m  [["user_id", 1], ["output_id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mBookmark Create (0.2ms)[0m  [1m[32mINSERT INTO "bookmarks" ("user_id", "output_id", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["user_id", 1], ["output_id", 9], ["created_at", "2025-10-31 22:00:59.377909"], ["updated_at", "2025-10-31 22:00:59.377909"]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+Completed 200 OK in 11ms (ActiveRecord: 1.7ms | Allocations: 6444)
+
+
+Started GET "/bookmarks" for ::1 at 2025-10-31 23:01:02 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.2ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?, ?, ?, ?)[0m  [["id", 2], ["id", 3], ["id", 4], ["id", 6], ["id", 8], ["id", 9]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 3735)
+  Rendered shared/_footer.html.erb (Duration: 3.8ms | Allocations: 2695)
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 10813)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.4ms | Allocations: 12538)
+
+
+Started GET "/" for ::1 at 2025-10-31 23:01:17 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 1.8ms | Allocations: 796)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 4270)
+  Rendered shared/_footer.html.erb (Duration: 3.4ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 11348)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.1ms | Allocations: 11583)
+
+
+Started GET "/bookmarks" for ::1 at 2025-10-31 23:02:07 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.1ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?, ?, ?, ?)[0m  [["id", 2], ["id", 3], ["id", 4], ["id", 6], ["id", 8], ["id", 9]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 13352)
+  Rendered shared/_footer.html.erb (Duration: 1.7ms | Allocations: 3007)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 21169)
+Completed 200 OK in 26ms (Views: 16.8ms | ActiveRecord: 1.7ms | Allocations: 30314)
+
+
+[dotenv] Set [36mOPENAI_ACCESS_TOKEN[0m, [36mMAPBOX_TOKEN[0m, [36mAWS_ACCESS_KEY_ID[0m, and [36mAWS_SECRET_ACCESS_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/bookmarks" for ::1 at 2025-10-31 23:04:32 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.1ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?, ?, ?, ?)[0m  [["id", 2], ["id", 3], ["id", 4], ["id", 6], ["id", 8], ["id", 9]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 44.1ms | Allocations: 48670)
+  Rendered shared/_footer.html.erb (Duration: 11.0ms | Allocations: 3122)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 56687)
+Completed 200 OK in 91ms (Views: 62.3ms | ActiveRecord: 1.7ms | Allocations: 77410)
+
+
+Started GET "/" for ::1 at 2025-10-31 23:04:33 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 5.1ms | Allocations: 1115)
+  Rendered shared/_output.html.erb (Duration: 0.3ms | Allocations: 92)
+  Rendered home/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 5389)
+  Rendered shared/_footer.html.erb (Duration: 1.9ms | Allocations: 2715)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 12504)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.1ms | Allocations: 13025)
+
+
+Started GET "/bookmarks" for ::1 at 2025-10-31 23:04:35 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.0ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.1ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?, ?, ?, ?)[0m  [["id", 2], ["id", 3], ["id", 4], ["id", 6], ["id", 8], ["id", 9]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3739)
+  Rendered shared/_footer.html.erb (Duration: 2.8ms | Allocations: 2696)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 10818)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.2ms | Allocations: 12551)
+
+
+Started POST "/bookmarks?class=btn-close&data%5Bconfirm%5D=remove+bookmark%3F&method=delete" for ::1 at 2025-10-31 23:04:37 +0100
+Processing by BookmarksController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "class"=>"btn-close", "data"=>{"confirm"=>"remove bookmark?"}, "method"=>"delete"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mBookmark Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."user_id" = ? AND "bookmarks"."output_id" IS NULL LIMIT ?[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+Completed 200 OK in 5ms (ActiveRecord: 0.7ms | Allocations: 4957)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 23:04:45 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 23:04:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 23:04:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
