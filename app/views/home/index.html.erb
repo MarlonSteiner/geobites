@@ -60,9 +60,9 @@
     <div class="col">
         <!-- Display none only works when I integrate it directly into the html. With the use of Javascript, we can make it only appear when there is an output-->
       <div class="col d-flex justify-content-end">
-        <%= button_to bookmarks_path, id: "bookmark-link", style:"display: none; border: none;" do%>
-          <%=image_tag "bookmark-icon-untoggled.svg", class:"url-icon", alt:"bookmark" %></a>
-        <% end %>
+        <div id="bookmark-link" style="display: none; border: none;">
+          <%=image_tag "bookmark-icon-untoggled.svg", class:"url-icon", alt:"bookmark" %>
+        </div>
       </div>
   </div>
   </div>

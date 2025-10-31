@@ -70,17 +70,31 @@
   });
 
   // Bookmark handling that I will transfer to a separate js file if it doesn't break.
-  document.getElementById("bookmark-link").addEventListener("click", function() {
-    const bookmarkData = new FormData();
-    bookmarkData.append("output_id", currentOutputId);
+  document.addEventListener("DOMContentLoaded", function() {
+    const bookmarkLink = document.getElementById("bookmark-link");
+    if (bookmarkLink) {
+      bookmarkLink.addEventListener("click", function() {
+        console.log("Bookmark clicked");
+        console.log("Current output ID:", currentOutputId);
 
-    fetch("/bookmarks", {
-      method: "POST",
-      headers: { "Accept": "application/json" },
-      body: bookmarkData
-    })
-    .then(response => {
-      console.log("Bookmark saved");
+        const bookmarkData = new FormData();
+        bookmarkData.append("output_id", currentOutputId);
+
+        fetch("/bookmarks", {
+          method: "POST",
+          headers: { "Accept": "application/json" },
+          body: bookmarkData
+        })
+        .then(response => {
+          console.log("Bookmark saved");
+
+        // Toggle icon depending on state
+        const bookmarkIcon = document.querySelector("#bookmark-link img");
+        bookmarkIcon.src = bookmarkIcon.src.includes("untoggled")
+          ? "<%= asset_path("bookmark-icon-toggled.svg") %>"
+          : "<%= asset_path("bookmark-icon-untoggled.svg") %>"
+      });
     });
+    }
   });
 </script>
