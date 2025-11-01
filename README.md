@@ -1,13 +1,11 @@
 # 🌍 GeoBites
 
-Discover the world, one fact at a time.
+Discover the world, one fact at a time. CS50 Final Project ✨
 <br>
 
 ## Preview
 
 <img width="1218" height="975" alt="Screenshot 2025-10-12 at 02 38 48" src="https://github.com/user-attachments/assets/bccd869e-923a-46e7-a24b-d11c0f187cc4" />
-
-## Overview
 
 ## Tech Stack
 <ul>
@@ -24,9 +22,9 @@ Discover the world, one fact at a time.
 
 ## Features
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Navigation</li>
+  <li>Fact generating</li>
+  <li>bookmark</li>
 </ul>
 
 ## How it works
@@ -34,13 +32,6 @@ Discover the world, one fact at a time.
   <li>Explore the Globe & Click on a Location</li>
   <li>Learn a random Fact</li>
   <li>Bookmark what's interesting</li>
-</ul>
-
-## Setup & Installation
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
 </ul>
 
 ## Future Improvements
