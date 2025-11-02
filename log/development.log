@@ -16006,3 +16006,195 @@ Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-
   
 ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
   
+Started GET "/" for ::1 at 2025-10-31 23:46:23 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 1.3ms | Allocations: 810)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 4297)
+  Rendered shared/_footer.html.erb (Duration: 2.6ms | Allocations: 2736)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 11520)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.2ms | Allocations: 11757)
+
+
+Started GET "/" for ::1 at 2025-10-31 23:46:24 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 0.5ms | Allocations: 796)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 4282)
+  Rendered shared/_footer.html.erb (Duration: 2.1ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 11360)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.1ms | Allocations: 11595)
+
+
+Started POST "/select" for ::1 at 2025-10-31 23:47:00 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Switzerland", "city"=>"St. Gallen", "latitude"=>"47.41429044895165", "longitude"=>"9.387636157666606"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mOutput Create (1.5ms)[0m  [1m[32mINSERT INTO "outputs" ("city", "country", "text", "source", "created_at", "updated_at", "latitude", "longitude") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["city", "St. Gallen"], ["country", "Switzerland"], ["text", "The Abbey Library of St. Gallen, one of the world’s oldest and most beautiful libraries, houses a remarkable collection of manuscripts and books, some dating back to the 8th century. Beyond its literary treasures, the library captivates visitors with its stunning Baroque architecture, complete with intricately"], ["source", nil], ["created_at", "2025-10-31 22:47:04.208137"], ["updated_at", "2025-10-31 22:47:04.208137"], ["latitude", 47.42486], ["longitude", 9.376546]]
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+Completed 200 OK in 3435ms (Views: 0.3ms | ActiveRecord: 3.4ms | Allocations: 4054)
+
+
+Started POST "/bookmarks" for ::1 at 2025-10-31 23:47:07 +0100
+Processing by BookmarksController#create as JSON
+  Parameters: {"output_id"=>"11"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mOutput Load (1.4ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mBookmark Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."user_id" = ? AND "bookmarks"."output_id" = ? LIMIT ?[0m  [["user_id", 1], ["output_id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mBookmark Create (0.2ms)[0m  [1m[32mINSERT INTO "bookmarks" ("user_id", "output_id", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["user_id", 1], ["output_id", 11], ["created_at", "2025-10-31 22:47:07.342127"], ["updated_at", "2025-10-31 22:47:07.342127"]]
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:16:in `create'
+Completed 200 OK in 11ms (ActiveRecord: 2.1ms | Allocations: 4902)
+
+
+Started GET "/bookmarks" for ::1 at 2025-10-31 23:47:09 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (2.2ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.3ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?, ?)[0m  [["id", 8], ["id", 9], ["id", 10], ["id", 11]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 25.2ms | Allocations: 2477)
+  Rendered shared/_footer.html.erb (Duration: 11.2ms | Allocations: 2737)
+  Rendered layout layouts/application.html.erb (Duration: 63.1ms | Allocations: 9701)
+Completed 200 OK in 67ms (Views: 61.1ms | ActiveRecord: 2.7ms | Allocations: 11428)
+
+
+Started DELETE "/bookmarks/6" for ::1 at 2025-10-31 23:47:14 +0100
+Processing by BookmarksController#destroy as */*
+  Parameters: {"id"=>"6", "bookmark"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ? AND "bookmarks"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:21:in `destroy'
+  [1m[36mBookmark Destroy (0.6ms)[0m  [1m[31mDELETE FROM "bookmarks" WHERE "bookmarks"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/bookmarks_controller.rb:21:in `destroy'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:21:in `destroy'
+Completed 200 OK in 7ms (ActiveRecord: 1.4ms | Allocations: 3204)
+
+
+Started GET "/.well-known/appspecific/com.chrome.devtools.json" for ::1 at 2025-10-31 23:47:35 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/.well-known/appspecific/com.chrome.devtools.json"):
+  
+Started GET "/" for ::1 at 2025-10-31 23:52:37 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 3.8ms | Allocations: 1071)
+  Rendered shared/_output.html.erb (Duration: 0.6ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 30.5ms | Allocations: 9438)
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | Allocations: 3007)
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 17272)
+Completed 200 OK in 39ms (Views: 36.6ms | ActiveRecord: 1.8ms | Allocations: 18240)
+
+
+Started GET "/" for ::1 at 2025-10-31 23:52:46 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 0.7ms | Allocations: 802)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 4259)
+  Rendered shared/_footer.html.erb (Duration: 2.3ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 11337)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms | Allocations: 11572)
+
+
+Started GET "/bookmarks" for ::1 at 2025-11-01 17:01:48 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (7.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.3ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?)[0m  [["id", 8], ["id", 10], ["id", 11]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 11478)
+  Rendered shared/_footer.html.erb (Duration: 4.6ms | Allocations: 2737)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 18716)
+Completed 200 OK in 46ms (Views: 25.0ms | ActiveRecord: 10.9ms | Allocations: 23590)
+
+
+Started GET "/" for ::1 at 2025-11-01 17:02:23 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 1.1ms | Allocations: 810)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 4289)
+  Rendered shared/_footer.html.erb (Duration: 2.0ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 11367)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 11602)
+
+
+Started GET "/bookmarks" for ::1 at 2025-11-02 16:55:12 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (5.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.1ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?)[0m  [["id", 8], ["id", 10], ["id", 11]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 11082)
+  Rendered shared/_footer.html.erb (Duration: 1.8ms | Allocations: 3007)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 18914)
+Completed 200 OK in 31ms (Views: 17.3ms | ActiveRecord: 7.5ms | Allocations: 27300)
+
+
+Started GET "/" for ::1 at 2025-11-02 17:16:40 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (3.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 5.6ms | Allocations: 1070)
+  Rendered shared/_output.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 34.7ms | Allocations: 5504)
+  Rendered shared/_footer.html.erb (Duration: 12.2ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 54.4ms | Allocations: 12595)
+Completed 200 OK in 64ms (Views: 50.6ms | ActiveRecord: 6.0ms | Allocations: 13108)
+
+
+Started GET "/bookmarks" for ::1 at 2025-11-02 22:54:40 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.3ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?)[0m  [["id", 8], ["id", 10], ["id", 11]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 11082)
+  Rendered shared/_footer.html.erb (Duration: 2.8ms | Allocations: 3007)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 18917)
+Completed 200 OK in 31ms (Views: 16.7ms | ActiveRecord: 8.4ms | Allocations: 27288)
+
+
