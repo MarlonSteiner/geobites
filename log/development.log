@@ -16198,3 +16198,75 @@ Processing by BookmarksController#index as HTML
 Completed 200 OK in 31ms (Views: 16.7ms | ActiveRecord: 8.4ms | Allocations: 27288)
 
 
+Started GET "/" for ::1 at 2025-11-03 01:12:29 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 1.7ms | Allocations: 1067)
+  Rendered shared/_output.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered home/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 8970)
+  Rendered shared/_footer.html.erb (Duration: 2.8ms | Allocations: 3009)
+  Rendered layout layouts/application.html.erb (Duration: 2608.9ms | Allocations: 58323)
+Completed 200 OK in 2611ms (Views: 2608.1ms | ActiveRecord: 1.9ms | Allocations: 59289)
+
+
+Started POST "/select" for ::1 at 2025-11-03 01:12:46 +0100
+Processing by HomeController#select as JSON
+  Parameters: {"country"=>"Philippines", "city"=>"Bayawan City", "latitude"=>"9.380650868485645", "longitude"=>"122.83330135302538"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mOutput Create (5.4ms)[0m  [1m[32mINSERT INTO "outputs" ("city", "country", "text", "source", "created_at", "updated_at", "latitude", "longitude") VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING "id"[0m  [["city", "Bayawan City"], ["country", "Philippines"], ["text", "Known as the \"Agricultural Capital of Negros Oriental,\" Bayawan City boasts an incredibly intriguing feature: it is home to one of the longest boulevards in the Philippines. Stretching approximately 4 kilometers along the shoreline, the Bayawan Boulevard offers not only a scenic view of the sea but"], ["source", nil], ["created_at", "2025-11-03 00:12:49.448192"], ["updated_at", "2025-11-03 00:12:49.448192"], ["latitude", 9.364865], ["longitude", 122.80591]]
+  ↳ app/controllers/home_controller.rb:18:in `select'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/home_controller.rb:18:in `select'
+Completed 200 OK in 2977ms (Views: 0.4ms | ActiveRecord: 6.4ms | Allocations: 9111)
+
+
+Started POST "/bookmarks" for ::1 at 2025-11-03 01:12:51 +0100
+Processing by BookmarksController#create as JSON
+  Parameters: {"output_id"=>"12"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:17:in `create'
+  [1m[36mOutput Load (1.0ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:17:in `create'
+  [1m[36mBookmark Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "bookmarks" WHERE "bookmarks"."user_id" = ? AND "bookmarks"."output_id" = ? LIMIT ?[0m  [["user_id", 1], ["output_id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:17:in `create'
+  [1m[36mBookmark Create (0.1ms)[0m  [1m[32mINSERT INTO "bookmarks" ("user_id", "output_id", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["user_id", 1], ["output_id", 12], ["created_at", "2025-11-03 00:12:51.869718"], ["updated_at", "2025-11-03 00:12:51.869718"]]
+  ↳ app/controllers/bookmarks_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/bookmarks_controller.rb:17:in `create'
+Completed 200 OK in 17ms (ActiveRecord: 1.6ms | Allocations: 11546)
+
+
+Started GET "/bookmarks" for ::1 at 2025-11-03 01:12:57 +0100
+Processing by BookmarksController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.1ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  [1m[36mOutput Load (0.1ms)[0m  [1m[34mSELECT "outputs".* FROM "outputs" WHERE "outputs"."id" IN (?, ?, ?, ?)[0m  [["id", 8], ["id", 10], ["id", 11], ["id", 12]]
+  ↳ app/views/bookmarks/index.html.erb:48
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 3210)
+  Rendered shared/_footer.html.erb (Duration: 3.0ms | Allocations: 2740)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 10444)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 0.4ms | Allocations: 12383)
+
+
+Started GET "/" for ::1 at 2025-11-03 01:13:12 +0100
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/index.html.erb:31
+  Rendered shared/_show.html.erb (Duration: 2.2ms | Allocations: 810)
+  Rendered shared/_output.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered home/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 4300)
+  Rendered shared/_footer.html.erb (Duration: 2.4ms | Allocations: 2727)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 11498)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.2ms | Allocations: 11734)
+
+
