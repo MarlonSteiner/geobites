@@ -1,8 +1,7 @@
-# 🌍 GeoBites
-
-Discover the world, one fact at a time. CS50 Final Project ✨
+# GeoBites
+#### Video Demo:  https://www.youtube.com/watch?v=Ud4SY8BJdlo
+#### Description: Discover the world, one fact at a time. CS50 Final Project ✨
 <br>
-
 ## Preview
 
 <img width="1218" height="975" alt="Screenshot 2025-10-12 at 02 38 48" src="https://github.com/user-attachments/assets/bccd869e-923a-46e7-a24b-d11c0f187cc4" />
