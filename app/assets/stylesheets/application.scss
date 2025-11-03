@@ -33,14 +33,14 @@ $spacers: (
 @import "components/main";
 
 // Your CSS partials
-// I took this code structure from my old GramGram github project
+// I took this code structure from my old GramGram public github project
 body {
   font-family: $body-font;
   // https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing
   letter-spacing: -3%;
 
 }
-
+// Making Inter the standard Heading font using $ from SCSS
 h1, h2, h3, h4, h5, h6 {
   font-family: $body-font;
 }

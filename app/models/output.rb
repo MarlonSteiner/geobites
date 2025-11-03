@@ -6,7 +6,7 @@ class Output < ApplicationRecord
   # Make sure all needed information is there before saving in the database
   validates :city, :country, :latitude, :longitude, :text, presence: true
 
-  # I don't actually need this block of code but due to mapbox geocoded_by :address
+  # I don't actually need this block of code but due to mapbox geocoded_by :address, I'm keeping it. Since everything is working!
   def address
     "#{city}, #{country}"
   end

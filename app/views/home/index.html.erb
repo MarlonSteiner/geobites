@@ -2,7 +2,7 @@
 <!-- I had a partial for it at first but want to remove "How it works" when on the bookmarks homepage, that's why I have a navbar directly on the index page -->
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top navheight">
   <div class="container-fluid d-flex justify-content-between align-items-end">
-    <!--Horizontal Spacer for centering-->
+    <!--Horizontal Spacer for centering which I find easiest to use-->
     <div id="nav-spacer"></div>
       <!--How it works-->
     <div id="how-it-works-width" class="d-flex justify-content-center align-items-center">
@@ -25,7 +25,7 @@
       <% end %>
     </div>
 
-    <!--User Login-->
+    <!--User Login using Devise gem. This navbar template is standard and has been used in my previous projects such as LogsAi and GramGram. Both public on my github.-->
     <ul class="navbar-nav" style="width: 208px;">
       <li>
         <% if user_signed_in? %>
@@ -53,14 +53,14 @@
     <%= render "shared/output" %>
   </div>
   <div class="row mx-57">
-  <!-- I was going to add a learn more feature but since I'm only using the lowest tier OpenAi api I commented it out-->
+  <!-- I was going to add a learn more feature but since I'm only using the lowest tier OpenAi api due to costs, I commented it out-->
 <!-- <div class="col">
       <div><a href="https://github.com/MarlonSteiner" ><%=image_tag "url-icon.svg", class:"url-icon", alt:"learn more icon" %></a>Learn more</div>
   </div>-->
     <div class="col">
         <!-- Display none only works when I integrate it directly into the html. With the use of Javascript, we can make it only appear when there is an output-->
       <div class="col d-flex justify-content-end">
-        <div id="bookmark-link" style="display: none; border: none;">
+        <div id="bookmark-link"style="display: none; border: none;">
           <%=image_tag "bookmark-icon-untoggled.svg", class:"url-icon", alt:"bookmark" %>
         </div>
       </div>

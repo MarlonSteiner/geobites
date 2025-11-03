@@ -24,7 +24,7 @@
       <% end %>
     </div>
 
-    <!--User Login-->
+    <!--User Login using Devise gem. This navbar template is standard and has been used in my previous projects such as LogsAi and GramGram. Both public on my github.-->
     <ul class="navbar-nav" style="width: 208px;">
       <li>
         <% if user_signed_in? %>
@@ -46,10 +46,12 @@
 <!-- Iteration code structure gotten from my old movie list project which is public on github -->
 <div class="d-flex gap-4 flex-wrap justify-content-center px-4">
   <% @bookmarks.each do |bookmark| %>
+  <!-- Using simpel bootstrap card body bootstrap class for bookmark layout -->
     <div class="card mb-3" id="bookmark-<%= bookmark.id %>">
       <div class="card-body">
         <div class="d-flex justify-content-between align-items-start mb-2">
           <h5 class="card-title"><%= bookmark.output.city %>,<%= bookmark.output.country %></h5>
+          <!-- Using bootstrap btn-close class -->
           <button class="btn-close delete-bookmark" data-bookmark-id="<%= bookmark.id %>"></button>
         </div>
         <p class="card-text"><%= bookmark.output.text %></p>
@@ -61,11 +63,14 @@
 <!-- Styling spacer -->
 <div style="height: 120px;"></div>
 
+<!-- I know it's better to have JS separated from html, however it works like this. "If it ain't broke, don't fix it" -->
 <script>
+  // Start of by selecting and going through all bookmarks which we would want to delete using .forEach
   document.querySelectorAll(".delete-bookmark").forEach(button => {
+     // have an eventlsitener waiting for when we click
     button.addEventListener("click", function() {
       const bookmarkId = this.dataset.bookmarkId;
-
+        // The structure of fetch I get from Le Wagon docs. Ofcourse delete method.
         fetch(`/bookmarks/${bookmarkId}`, {
           method: "DELETE",
           headers: {
@@ -74,6 +79,7 @@
         })
         .then(response => {
           if (response.ok) {
+            // If delete is clicked, the selected bookmark is removed with .remove
             document.getElementById(`bookmark-${bookmarkId}`).remove();
           }
       });
